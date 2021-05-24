@@ -1,4 +1,13 @@
 // warning text
+// const warning = document.querySelector('.warning');
+// const btn = document.querySelector('.btnWarning');
+
+// btn.addEventListener('click', function () {
+//     console.log('clicked');
+//     warning.classList.add('hidden');
+//     warning.classList.remove('flex');
+// });
+
 const btn = document.querySelector('.btnWarning');
 
 btn.addEventListener('click', function () {
