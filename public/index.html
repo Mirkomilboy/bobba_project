@@ -11,7 +11,7 @@
 </head>
 <body class="font-noto">
     <main class="flex">
-        <!-- side bar -->
+        <!-- ========== side bar ========== -->
         <div class="w-2/12 bg-dark pt-28 fixed z-50 h-full">
             <h1 class="font-bold text-white text-lg px-10">Main menu</h1>
             <a class="flex items-center space-x-2 text-[#FFDC7E] text-sm font-bold mt-8 px-10 hover:text-white transition ease-in" href="#">
@@ -86,9 +86,9 @@
             </a>
         </div>
 
-        <!-- main -->
-        <div class="w-10/12 bg-medium ml-auto">
-          <!-- header -->
+        <!-- ========== main ========== -->
+        <div class="accordion w-10/12 bg-medium ml-auto">
+          <!-- ========== header ========== -->
           <div class="fixed w-10/12 z-50 flex flex-wrap items-center justify-between bg-[#1D1D1D] px-20">
             <!-- left contenct -->
             <div class="flex flex-wrap py-4">
@@ -179,7 +179,7 @@
 
           </div>
 
-          <!-- hero -->
+          <!-- ========== hero ========== -->
           <div class="flex flex-wrap px-20 pt-24">
             <!-- left side -->
             <div class="w-1/2 border-r border-[#414141] py-10">
@@ -287,7 +287,7 @@
             </div>
           </div>
 
-          <!-- warning text -->
+          <!-- ========== warning text ========== -->
           <div class="px-20">
             <div class="warning flex items-center justify-between rounded bg-[#181818] p-4">
               <div class="flex items-center space-x-2">
@@ -311,9 +311,9 @@
             </div>
           </div>
 
-          <!-- my friends -->
-          <div class="px-20">
-            <div class="flex items-center space-x-4 pt-12 pb-4">
+          <!-- ========== my friends ========== -->
+          <div class="accordionMain px-20">
+            <div class="accordionBtn flex items-center cursor-pointer space-x-4 pt-12 pb-4">
               <button class="py-3 px-2.5 border border-gray-600 rounded-full bg-dark focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
                   <path id="Path_143" data-name="Path 143" d="M361.171,153.787c.4.7,6,6,6,6l-6,6" transform="translate(166.494 -360.305) rotate(90)" fill="none" stroke="#8e8e8e" stroke-width="2"/>
@@ -322,136 +322,138 @@
               <h1 class="text-3xl font-bold text-white">My friends (8)</h1>
             </div>
 
-            <div class="w-full flex flex-wrap justify-between border-b border-gray-700 pt-4 pb-8">
-              <button class="focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12.3" height="21.207" viewBox="0 0 12.3 21.207">
-                  <path id="Path_170" data-name="Path 170" d="M371.171,153.787c-.67,1.16-10,10-10,10l10,10" transform="translate(-359.737 -153.287)" fill="none" stroke="#8e8e8e" stroke-width="2" opacity="0.4"/>
-                </svg>
-              </button>
-
-              <div class="flex space-x-4">
-                <button class="flex items-center w-56 border rounded-full border-green-600 bg-gray-600 bg-opacity-30 focus:outline-none">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="50" viewBox="0 0 70 60">
-                    <defs>
-                      <clipPath id="clip-path">
-                        <rect id="furnimatic_backdrop_bg" width="70" height="60" rx="30" transform="translate(400 830)" fill="#333"/>
-                      </clipPath>
-                    </defs>
-                    <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-400 -830)" clip-path="url(#clip-path)">
-                      <image id="avatarimage" width="54" height="62" transform="translate(410 826)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA+CAYAAABgFuiwAAACTElEQVR42u2ZQW7CMBBFc4H2AhWbik03bLpjVwkJsWLLgbhEl1ygZ+i+N6g4S1PGyo++Jw4BZYINmkoju85k+M8zdhSnquu6ekSrHMzBHMzBHMzBHMzBHMzBHMzBHOzxwE5/9Tm7KzAW/vy2iqx6eW/bYBNC2kM14hlm9bFNQkZmDDcplAAxmAasnl4ng7tJpqTtzdpEcGZgqTWkM6XbAAUrDQzZ6mwMJ7GcLbYoW4AyhjMtQ4bqlFjKxEfu13AlgXWgWDS3MN7uJyjHaaBSQCkwHtNlORLObNPgMhoEO+drVI6jwTo73Gns7/e7H05lJfJtroV4JWQsPIhJKCzKTmLTSPm2FZAbjGeYhUaCE9brW8oa4zWREnuNRSWZE+x4PA5m4WqwxiR21ozt9/tgQ+9elxrHywLGYmazWSsoZXKdbcjX4j1tFNhutws/vtlsWtGHwyHqi8l1CJU+xlP3wBex820ejdjlchlamXVp0UdZ8TrCOPtxDIu36tFgIgatBRjHzAq2Xq9bIZc+s875SiyJWUTGIMRiu+eJygq2WCyCkPl83gv38/WZ7GsoiSGxJGYRYDzLl5ZcyhfZzw7G5Sjbs8w4CxWBMo4WojHGcHKvjFuUoRkYyhFrDc8hjGPt4DrKDc8q+FuVoekpFcoRwhiyz+CjJ6ao4zesNYAhU5IJnRn8Dx99b3EnwQyFvi41HuNStYSa5OyegaTPsFx62q/Ys3sNB+OdEJlEy4B38X1Mlxo2Fm45Y/7hzz/VOpiDOZiDOZiDOZiD3dL+AfhEglswX7gHAAAAAElFTkSuQmCC"/>
-                    </g>
-                  </svg>
-                  <p class="text-xl text-gray-600">|</p>
-                  <p class="font-bold text-sm text-white px-3">Disco-Lee</p>
-                  <div class="ml-auto pr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                      <path id="Path_165" data-name="Path 165" d="M10,0A10,10,0,0,0,1.326,14.978l-1.288,4a.781.781,0,0,0,.983.983l4-1.288A10,10,0,1,0,10,0Zm0,18.438a8.413,8.413,0,0,1-4.466-1.278.782.782,0,0,0-.654-.081l-2.888.93.93-2.888a.782.782,0,0,0-.081-.654A8.438,8.438,0,1,1,10,18.438ZM10.977,10A.977.977,0,1,1,10,9.023.977.977,0,0,1,10.977,10Zm3.906,0a.977.977,0,1,1-.977-.977A.977.977,0,0,1,14.883,10ZM7.07,10a.977.977,0,1,1-.977-.977A.977.977,0,0,1,7.07,10Z" fill="#8e8e8e"/>
+            <div class="w-full h-0 transition-[height] duration-200 ease-in overflow-hidden border-b border-gray-700">
+              <div class="flex flex-wrap justify-between pt-4 pb-8">
+                <button class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12.3" height="21.207" viewBox="0 0 12.3 21.207">
+                      <path id="Path_170" data-name="Path 170" d="M371.171,153.787c-.67,1.16-10,10-10,10l10,10" transform="translate(-359.737 -153.287)" fill="none" stroke="#8e8e8e" stroke-width="2" opacity="0.4"/>
                     </svg>
-                  </div>
-                </button>
+                  </button>
 
-                <button class="flex items-center w-56 border rounded-full border-green-600 bg-gray-600 bg-opacity-30 focus:outline-none">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="50" viewBox="0 0 70 60">
-                    <defs>
-                      <clipPath id="clip-path">
-                        <rect id="furnimatic_backdrop_bg" width="70" height="60" rx="30" transform="translate(400 830)" fill="#333"/>
-                      </clipPath>
-                    </defs>
-                    <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-400 -830)" clip-path="url(#clip-path)">
-                      <image id="avatarimage" width="54" height="62" transform="translate(410 826)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA+CAYAAABgFuiwAAACTElEQVR42u2ZQW7CMBBFc4H2AhWbik03bLpjVwkJsWLLgbhEl1ygZ+i+N6g4S1PGyo++Jw4BZYINmkoju85k+M8zdhSnquu6ekSrHMzBHMzBHMzBHMzBHMzBHMzBHOzxwE5/9Tm7KzAW/vy2iqx6eW/bYBNC2kM14hlm9bFNQkZmDDcplAAxmAasnl4ng7tJpqTtzdpEcGZgqTWkM6XbAAUrDQzZ6mwMJ7GcLbYoW4AyhjMtQ4bqlFjKxEfu13AlgXWgWDS3MN7uJyjHaaBSQCkwHtNlORLObNPgMhoEO+drVI6jwTo73Gns7/e7H05lJfJtroV4JWQsPIhJKCzKTmLTSPm2FZAbjGeYhUaCE9brW8oa4zWREnuNRSWZE+x4PA5m4WqwxiR21ozt9/tgQ+9elxrHywLGYmazWSsoZXKdbcjX4j1tFNhutws/vtlsWtGHwyHqi8l1CJU+xlP3wBex820ejdjlchlamXVp0UdZ8TrCOPtxDIu36tFgIgatBRjHzAq2Xq9bIZc+s875SiyJWUTGIMRiu+eJygq2WCyCkPl83gv38/WZ7GsoiSGxJGYRYDzLl5ZcyhfZzw7G5Sjbs8w4CxWBMo4WojHGcHKvjFuUoRkYyhFrDc8hjGPt4DrKDc8q+FuVoekpFcoRwhiyz+CjJ6ao4zesNYAhU5IJnRn8Dx99b3EnwQyFvi41HuNStYSa5OyegaTPsFx62q/Ys3sNB+OdEJlEy4B38X1Mlxo2Fm45Y/7hzz/VOpiDOZiDOZiDOZiD3dL+AfhEglswX7gHAAAAAElFTkSuQmCC"/>
-                    </g>
-                  </svg>
-                  <p class="text-xl text-gray-600">|</p>
-                  <p class="font-bold text-sm text-white px-3">Disco-Lee</p>
-                  <div class="ml-auto pr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                      <path id="Path_165" data-name="Path 165" d="M10,0A10,10,0,0,0,1.326,14.978l-1.288,4a.781.781,0,0,0,.983.983l4-1.288A10,10,0,1,0,10,0Zm0,18.438a8.413,8.413,0,0,1-4.466-1.278.782.782,0,0,0-.654-.081l-2.888.93.93-2.888a.782.782,0,0,0-.081-.654A8.438,8.438,0,1,1,10,18.438ZM10.977,10A.977.977,0,1,1,10,9.023.977.977,0,0,1,10.977,10Zm3.906,0a.977.977,0,1,1-.977-.977A.977.977,0,0,1,14.883,10ZM7.07,10a.977.977,0,1,1-.977-.977A.977.977,0,0,1,7.07,10Z" fill="#8e8e8e"/>
-                    </svg>
+                  <div class="flex space-x-4">
+                    <button class="flex items-center w-56 border rounded-full border-green-600 bg-gray-600 bg-opacity-30 focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="50" viewBox="0 0 70 60">
+                        <defs>
+                          <clipPath id="clip-path">
+                            <rect id="furnimatic_backdrop_bg" width="70" height="60" rx="30" transform="translate(400 830)" fill="#333"/>
+                          </clipPath>
+                        </defs>
+                        <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-400 -830)" clip-path="url(#clip-path)">
+                          <image id="avatarimage" width="54" height="62" transform="translate(410 826)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA+CAYAAABgFuiwAAACTElEQVR42u2ZQW7CMBBFc4H2AhWbik03bLpjVwkJsWLLgbhEl1ygZ+i+N6g4S1PGyo++Jw4BZYINmkoju85k+M8zdhSnquu6ekSrHMzBHMzBHMzBHMzBHMzBHMzBHOzxwE5/9Tm7KzAW/vy2iqx6eW/bYBNC2kM14hlm9bFNQkZmDDcplAAxmAasnl4ng7tJpqTtzdpEcGZgqTWkM6XbAAUrDQzZ6mwMJ7GcLbYoW4AyhjMtQ4bqlFjKxEfu13AlgXWgWDS3MN7uJyjHaaBSQCkwHtNlORLObNPgMhoEO+drVI6jwTo73Gns7/e7H05lJfJtroV4JWQsPIhJKCzKTmLTSPm2FZAbjGeYhUaCE9brW8oa4zWREnuNRSWZE+x4PA5m4WqwxiR21ozt9/tgQ+9elxrHywLGYmazWSsoZXKdbcjX4j1tFNhutws/vtlsWtGHwyHqi8l1CJU+xlP3wBex820ejdjlchlamXVp0UdZ8TrCOPtxDIu36tFgIgatBRjHzAq2Xq9bIZc+s875SiyJWUTGIMRiu+eJygq2WCyCkPl83gv38/WZ7GsoiSGxJGYRYDzLl5ZcyhfZzw7G5Sjbs8w4CxWBMo4WojHGcHKvjFuUoRkYyhFrDc8hjGPt4DrKDc8q+FuVoekpFcoRwhiyz+CjJ6ao4zesNYAhU5IJnRn8Dx99b3EnwQyFvi41HuNStYSa5OyegaTPsFx62q/Ys3sNB+OdEJlEy4B38X1Mlxo2Fm45Y/7hzz/VOpiDOZiDOZiDOZiD3dL+AfhEglswX7gHAAAAAElFTkSuQmCC"/>
+                        </g>
+                      </svg>
+                      <p class="text-xl text-gray-600">|</p>
+                      <p class="font-bold text-sm text-white px-3">Disco-Lee</p>
+                      <div class="ml-auto pr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                          <path id="Path_165" data-name="Path 165" d="M10,0A10,10,0,0,0,1.326,14.978l-1.288,4a.781.781,0,0,0,.983.983l4-1.288A10,10,0,1,0,10,0Zm0,18.438a8.413,8.413,0,0,1-4.466-1.278.782.782,0,0,0-.654-.081l-2.888.93.93-2.888a.782.782,0,0,0-.081-.654A8.438,8.438,0,1,1,10,18.438ZM10.977,10A.977.977,0,1,1,10,9.023.977.977,0,0,1,10.977,10Zm3.906,0a.977.977,0,1,1-.977-.977A.977.977,0,0,1,14.883,10ZM7.07,10a.977.977,0,1,1-.977-.977A.977.977,0,0,1,7.07,10Z" fill="#8e8e8e"/>
+                        </svg>
+                      </div>
+                    </button>
+    
+                    <button class="flex items-center w-56 border rounded-full border-green-600 bg-gray-600 bg-opacity-30 focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="50" viewBox="0 0 70 60">
+                        <defs>
+                          <clipPath id="clip-path">
+                            <rect id="furnimatic_backdrop_bg" width="70" height="60" rx="30" transform="translate(400 830)" fill="#333"/>
+                          </clipPath>
+                        </defs>
+                        <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-400 -830)" clip-path="url(#clip-path)">
+                          <image id="avatarimage" width="54" height="62" transform="translate(410 826)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA+CAYAAABgFuiwAAACTElEQVR42u2ZQW7CMBBFc4H2AhWbik03bLpjVwkJsWLLgbhEl1ygZ+i+N6g4S1PGyo++Jw4BZYINmkoju85k+M8zdhSnquu6ekSrHMzBHMzBHMzBHMzBHMzBHMzBHOzxwE5/9Tm7KzAW/vy2iqx6eW/bYBNC2kM14hlm9bFNQkZmDDcplAAxmAasnl4ng7tJpqTtzdpEcGZgqTWkM6XbAAUrDQzZ6mwMJ7GcLbYoW4AyhjMtQ4bqlFjKxEfu13AlgXWgWDS3MN7uJyjHaaBSQCkwHtNlORLObNPgMhoEO+drVI6jwTo73Gns7/e7H05lJfJtroV4JWQsPIhJKCzKTmLTSPm2FZAbjGeYhUaCE9brW8oa4zWREnuNRSWZE+x4PA5m4WqwxiR21ozt9/tgQ+9elxrHywLGYmazWSsoZXKdbcjX4j1tFNhutws/vtlsWtGHwyHqi8l1CJU+xlP3wBex820ejdjlchlamXVp0UdZ8TrCOPtxDIu36tFgIgatBRjHzAq2Xq9bIZc+s875SiyJWUTGIMRiu+eJygq2WCyCkPl83gv38/WZ7GsoiSGxJGYRYDzLl5ZcyhfZzw7G5Sjbs8w4CxWBMo4WojHGcHKvjFuUoRkYyhFrDc8hjGPt4DrKDc8q+FuVoekpFcoRwhiyz+CjJ6ao4zesNYAhU5IJnRn8Dx99b3EnwQyFvi41HuNStYSa5OyegaTPsFx62q/Ys3sNB+OdEJlEy4B38X1Mlxo2Fm45Y/7hzz/VOpiDOZiDOZiDOZiD3dL+AfhEglswX7gHAAAAAElFTkSuQmCC"/>
+                        </g>
+                      </svg>
+                      <p class="text-xl text-gray-600">|</p>
+                      <p class="font-bold text-sm text-white px-3">Disco-Lee</p>
+                      <div class="ml-auto pr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                          <path id="Path_165" data-name="Path 165" d="M10,0A10,10,0,0,0,1.326,14.978l-1.288,4a.781.781,0,0,0,.983.983l4-1.288A10,10,0,1,0,10,0Zm0,18.438a8.413,8.413,0,0,1-4.466-1.278.782.782,0,0,0-.654-.081l-2.888.93.93-2.888a.782.782,0,0,0-.081-.654A8.438,8.438,0,1,1,10,18.438ZM10.977,10A.977.977,0,1,1,10,9.023.977.977,0,0,1,10.977,10Zm3.906,0a.977.977,0,1,1-.977-.977A.977.977,0,0,1,14.883,10ZM7.07,10a.977.977,0,1,1-.977-.977A.977.977,0,0,1,7.07,10Z" fill="#8e8e8e"/>
+                        </svg>
+                      </div>
+                    </button>
+    
+                    <button class="flex items-center w-56 border rounded-full border-yellow-600 bg-gray-600 bg-opacity-30 focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="50" viewBox="0 0 70 60">
+                        <defs>
+                          <clipPath id="clip-path">
+                            <rect id="furnimatic_backdrop_bg" width="70" height="60" rx="30" transform="translate(400 830)" fill="#333"/>
+                          </clipPath>
+                        </defs>
+                        <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-400 -830)" clip-path="url(#clip-path)">
+                          <image id="avatarimage" width="54" height="62" transform="translate(410 826)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA+CAYAAABgFuiwAAACTElEQVR42u2ZQW7CMBBFc4H2AhWbik03bLpjVwkJsWLLgbhEl1ygZ+i+N6g4S1PGyo++Jw4BZYINmkoju85k+M8zdhSnquu6ekSrHMzBHMzBHMzBHMzBHMzBHMzBHOzxwE5/9Tm7KzAW/vy2iqx6eW/bYBNC2kM14hlm9bFNQkZmDDcplAAxmAasnl4ng7tJpqTtzdpEcGZgqTWkM6XbAAUrDQzZ6mwMJ7GcLbYoW4AyhjMtQ4bqlFjKxEfu13AlgXWgWDS3MN7uJyjHaaBSQCkwHtNlORLObNPgMhoEO+drVI6jwTo73Gns7/e7H05lJfJtroV4JWQsPIhJKCzKTmLTSPm2FZAbjGeYhUaCE9brW8oa4zWREnuNRSWZE+x4PA5m4WqwxiR21ozt9/tgQ+9elxrHywLGYmazWSsoZXKdbcjX4j1tFNhutws/vtlsWtGHwyHqi8l1CJU+xlP3wBex820ejdjlchlamXVp0UdZ8TrCOPtxDIu36tFgIgatBRjHzAq2Xq9bIZc+s875SiyJWUTGIMRiu+eJygq2WCyCkPl83gv38/WZ7GsoiSGxJGYRYDzLl5ZcyhfZzw7G5Sjbs8w4CxWBMo4WojHGcHKvjFuUoRkYyhFrDc8hjGPt4DrKDc8q+FuVoekpFcoRwhiyz+CjJ6ao4zesNYAhU5IJnRn8Dx99b3EnwQyFvi41HuNStYSa5OyegaTPsFx62q/Ys3sNB+OdEJlEy4B38X1Mlxo2Fm45Y/7hzz/VOpiDOZiDOZiDOZiD3dL+AfhEglswX7gHAAAAAElFTkSuQmCC"/>
+                        </g>
+                      </svg>
+                      <p class="text-xl text-gray-600">|</p>
+                      <p class="font-bold text-sm text-white px-3">Disco-Lee</p>
+                      <div class="ml-auto pr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                          <path id="Path_165" data-name="Path 165" d="M10,0A10,10,0,0,0,1.326,14.978l-1.288,4a.781.781,0,0,0,.983.983l4-1.288A10,10,0,1,0,10,0Zm0,18.438a8.413,8.413,0,0,1-4.466-1.278.782.782,0,0,0-.654-.081l-2.888.93.93-2.888a.782.782,0,0,0-.081-.654A8.438,8.438,0,1,1,10,18.438ZM10.977,10A.977.977,0,1,1,10,9.023.977.977,0,0,1,10.977,10Zm3.906,0a.977.977,0,1,1-.977-.977A.977.977,0,0,1,14.883,10ZM7.07,10a.977.977,0,1,1-.977-.977A.977.977,0,0,1,7.07,10Z" fill="#8e8e8e"/>
+                        </svg>
+                      </div>
+                    </button>
+    
+                    <button class="flex items-center w-56 border rounded-full border-gray-600 bg-gray-600 bg-opacity-30 focus:outline-none">
+                      <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="50" viewBox="0 0 70 60">
+                        <defs>
+                          <clipPath id="clip-path">
+                            <rect id="furnimatic_backdrop_bg" width="70" height="60" rx="30" transform="translate(400 830)" fill="#none"/>
+                          </clipPath>
+                        </defs>
+                        <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-400 -830)" clip-path="url(#clip-path)">
+                          <image id="avatarimage" width="54" height="62" transform="translate(410 826)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA+CAYAAABgFuiwAAACTElEQVR42u2ZQW7CMBBFc4H2AhWbik03bLpjVwkJsWLLgbhEl1ygZ+i+N6g4S1PGyo++Jw4BZYINmkoju85k+M8zdhSnquu6ekSrHMzBHMzBHMzBHMzBHMzBHMzBHOzxwE5/9Tm7KzAW/vy2iqx6eW/bYBNC2kM14hlm9bFNQkZmDDcplAAxmAasnl4ng7tJpqTtzdpEcGZgqTWkM6XbAAUrDQzZ6mwMJ7GcLbYoW4AyhjMtQ4bqlFjKxEfu13AlgXWgWDS3MN7uJyjHaaBSQCkwHtNlORLObNPgMhoEO+drVI6jwTo73Gns7/e7H05lJfJtroV4JWQsPIhJKCzKTmLTSPm2FZAbjGeYhUaCE9brW8oa4zWREnuNRSWZE+x4PA5m4WqwxiR21ozt9/tgQ+9elxrHywLGYmazWSsoZXKdbcjX4j1tFNhutws/vtlsWtGHwyHqi8l1CJU+xlP3wBex820ejdjlchlamXVp0UdZ8TrCOPtxDIu36tFgIgatBRjHzAq2Xq9bIZc+s875SiyJWUTGIMRiu+eJygq2WCyCkPl83gv38/WZ7GsoiSGxJGYRYDzLl5ZcyhfZzw7G5Sjbs8w4CxWBMo4WojHGcHKvjFuUoRkYyhFrDc8hjGPt4DrKDc8q+FuVoekpFcoRwhiyz+CjJ6ao4zesNYAhU5IJnRn8Dx99b3EnwQyFvi41HuNStYSa5OyegaTPsFx62q/Ys3sNB+OdEJlEy4B38X1Mlxo2Fm45Y/7hzz/VOpiDOZiDOZiDOZiD3dL+AfhEglswX7gHAAAAAElFTkSuQmCC"/>
+                        </g>
+                      </svg>
+                      <p class="text-xl text-gray-600">|</p>
+                      <p class="font-bold text-sm text-white px-3">Disco-Lee</p>
+                      <div class="ml-auto pr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                          <path id="Path_165" data-name="Path 165" d="M10,0A10,10,0,0,0,1.326,14.978l-1.288,4a.781.781,0,0,0,.983.983l4-1.288A10,10,0,1,0,10,0Zm0,18.438a8.413,8.413,0,0,1-4.466-1.278.782.782,0,0,0-.654-.081l-2.888.93.93-2.888a.782.782,0,0,0-.081-.654A8.438,8.438,0,1,1,10,18.438ZM10.977,10A.977.977,0,1,1,10,9.023.977.977,0,0,1,10.977,10Zm3.906,0a.977.977,0,1,1-.977-.977A.977.977,0,0,1,14.883,10ZM7.07,10a.977.977,0,1,1-.977-.977A.977.977,0,0,1,7.07,10Z" fill="#8e8e8e"/>
+                        </svg>
+                      </div>
+                    </button>
+    
+                    <button class="flex items-center w-56 border rounded-full border-gray-600 bg-gray-600 bg-opacity-30 focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="50" viewBox="0 0 70 60">
+                        <defs>
+                          <clipPath id="clip-path">
+                            <rect id="furnimatic_backdrop_bg" width="70" height="60" rx="30" transform="translate(400 830)" fill="#333"/>
+                          </clipPath>
+                        </defs>
+                        <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-400 -830)" clip-path="url(#clip-path)">
+                          <image id="avatarimage" width="54" height="62" transform="translate(410 826)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA+CAYAAABgFuiwAAACTElEQVR42u2ZQW7CMBBFc4H2AhWbik03bLpjVwkJsWLLgbhEl1ygZ+i+N6g4S1PGyo++Jw4BZYINmkoju85k+M8zdhSnquu6ekSrHMzBHMzBHMzBHMzBHMzBHMzBHOzxwE5/9Tm7KzAW/vy2iqx6eW/bYBNC2kM14hlm9bFNQkZmDDcplAAxmAasnl4ng7tJpqTtzdpEcGZgqTWkM6XbAAUrDQzZ6mwMJ7GcLbYoW4AyhjMtQ4bqlFjKxEfu13AlgXWgWDS3MN7uJyjHaaBSQCkwHtNlORLObNPgMhoEO+drVI6jwTo73Gns7/e7H05lJfJtroV4JWQsPIhJKCzKTmLTSPm2FZAbjGeYhUaCE9brW8oa4zWREnuNRSWZE+x4PA5m4WqwxiR21ozt9/tgQ+9elxrHywLGYmazWSsoZXKdbcjX4j1tFNhutws/vtlsWtGHwyHqi8l1CJU+xlP3wBex820ejdjlchlamXVp0UdZ8TrCOPtxDIu36tFgIgatBRjHzAq2Xq9bIZc+s875SiyJWUTGIMRiu+eJygq2WCyCkPl83gv38/WZ7GsoiSGxJGYRYDzLl5ZcyhfZzw7G5Sjbs8w4CxWBMo4WojHGcHKvjFuUoRkYyhFrDc8hjGPt4DrKDc8q+FuVoekpFcoRwhiyz+CjJ6ao4zesNYAhU5IJnRn8Dx99b3EnwQyFvi41HuNStYSa5OyegaTPsFx62q/Ys3sNB+OdEJlEy4B38X1Mlxo2Fm45Y/7hzz/VOpiDOZiDOZiDOZiD3dL+AfhEglswX7gHAAAAAElFTkSuQmCC"/>
+                        </g>
+                      </svg>
+                      <p class="text-xl text-gray-600">|</p>
+                      <p class="font-bold text-sm text-white px-3">Disco-Lee</p>
+                      <div class="ml-auto pr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                          <path id="Path_165" data-name="Path 165" d="M10,0A10,10,0,0,0,1.326,14.978l-1.288,4a.781.781,0,0,0,.983.983l4-1.288A10,10,0,1,0,10,0Zm0,18.438a8.413,8.413,0,0,1-4.466-1.278.782.782,0,0,0-.654-.081l-2.888.93.93-2.888a.782.782,0,0,0-.081-.654A8.438,8.438,0,1,1,10,18.438ZM10.977,10A.977.977,0,1,1,10,9.023.977.977,0,0,1,10.977,10Zm3.906,0a.977.977,0,1,1-.977-.977A.977.977,0,0,1,14.883,10ZM7.07,10a.977.977,0,1,1-.977-.977A.977.977,0,0,1,7.07,10Z" fill="#8e8e8e"/>
+                        </svg>
+                      </div>
+                    </button>
                   </div>
-                </button>
 
-                <button class="flex items-center w-56 border rounded-full border-yellow-600 bg-gray-600 bg-opacity-30 focus:outline-none">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="50" viewBox="0 0 70 60">
-                    <defs>
-                      <clipPath id="clip-path">
-                        <rect id="furnimatic_backdrop_bg" width="70" height="60" rx="30" transform="translate(400 830)" fill="#333"/>
-                      </clipPath>
-                    </defs>
-                    <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-400 -830)" clip-path="url(#clip-path)">
-                      <image id="avatarimage" width="54" height="62" transform="translate(410 826)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA+CAYAAABgFuiwAAACTElEQVR42u2ZQW7CMBBFc4H2AhWbik03bLpjVwkJsWLLgbhEl1ygZ+i+N6g4S1PGyo++Jw4BZYINmkoju85k+M8zdhSnquu6ekSrHMzBHMzBHMzBHMzBHMzBHMzBHOzxwE5/9Tm7KzAW/vy2iqx6eW/bYBNC2kM14hlm9bFNQkZmDDcplAAxmAasnl4ng7tJpqTtzdpEcGZgqTWkM6XbAAUrDQzZ6mwMJ7GcLbYoW4AyhjMtQ4bqlFjKxEfu13AlgXWgWDS3MN7uJyjHaaBSQCkwHtNlORLObNPgMhoEO+drVI6jwTo73Gns7/e7H05lJfJtroV4JWQsPIhJKCzKTmLTSPm2FZAbjGeYhUaCE9brW8oa4zWREnuNRSWZE+x4PA5m4WqwxiR21ozt9/tgQ+9elxrHywLGYmazWSsoZXKdbcjX4j1tFNhutws/vtlsWtGHwyHqi8l1CJU+xlP3wBex820ejdjlchlamXVp0UdZ8TrCOPtxDIu36tFgIgatBRjHzAq2Xq9bIZc+s875SiyJWUTGIMRiu+eJygq2WCyCkPl83gv38/WZ7GsoiSGxJGYRYDzLl5ZcyhfZzw7G5Sjbs8w4CxWBMo4WojHGcHKvjFuUoRkYyhFrDc8hjGPt4DrKDc8q+FuVoekpFcoRwhiyz+CjJ6ao4zesNYAhU5IJnRn8Dx99b3EnwQyFvi41HuNStYSa5OyegaTPsFx62q/Ys3sNB+OdEJlEy4B38X1Mlxo2Fm45Y/7hzz/VOpiDOZiDOZiDOZiD3dL+AfhEglswX7gHAAAAAElFTkSuQmCC"/>
-                    </g>
-                  </svg>
-                  <p class="text-xl text-gray-600">|</p>
-                  <p class="font-bold text-sm text-white px-3">Disco-Lee</p>
-                  <div class="ml-auto pr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                      <path id="Path_165" data-name="Path 165" d="M10,0A10,10,0,0,0,1.326,14.978l-1.288,4a.781.781,0,0,0,.983.983l4-1.288A10,10,0,1,0,10,0Zm0,18.438a8.413,8.413,0,0,1-4.466-1.278.782.782,0,0,0-.654-.081l-2.888.93.93-2.888a.782.782,0,0,0-.081-.654A8.438,8.438,0,1,1,10,18.438ZM10.977,10A.977.977,0,1,1,10,9.023.977.977,0,0,1,10.977,10Zm3.906,0a.977.977,0,1,1-.977-.977A.977.977,0,0,1,14.883,10ZM7.07,10a.977.977,0,1,1-.977-.977A.977.977,0,0,1,7.07,10Z" fill="#8e8e8e"/>
+                  <button class="py-3 px-6 border border-gray-600 rounded-full bg-gray-600 bg-opacity-30 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="26" viewBox="0 0 6 26">
+                      <g id="Group_169" data-name="Group 169" transform="translate(-1736 -772)">
+                        <rect id="furnimatic_backdrop_bg" width="6" height="6" rx="3" transform="translate(1736 772)" fill="#8e8e8e"/>
+                        <rect id="furnimatic_backdrop_bg-2" data-name="furnimatic_backdrop_bg" width="6" height="6" rx="3" transform="translate(1736 782)" fill="#8e8e8e"/>
+                        <rect id="furnimatic_backdrop_bg-3" data-name="furnimatic_backdrop_bg" width="6" height="6" rx="3" transform="translate(1736 792)" fill="#8e8e8e"/>
+                      </g>
                     </svg>
-                  </div>
-                </button>
+                  </button>
 
-                <button class="flex items-center w-56 border rounded-full border-gray-600 bg-gray-600 bg-opacity-30 focus:outline-none">
-                  <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="50" viewBox="0 0 70 60">
-                    <defs>
-                      <clipPath id="clip-path">
-                        <rect id="furnimatic_backdrop_bg" width="70" height="60" rx="30" transform="translate(400 830)" fill="#none"/>
-                      </clipPath>
-                    </defs>
-                    <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-400 -830)" clip-path="url(#clip-path)">
-                      <image id="avatarimage" width="54" height="62" transform="translate(410 826)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA+CAYAAABgFuiwAAACTElEQVR42u2ZQW7CMBBFc4H2AhWbik03bLpjVwkJsWLLgbhEl1ygZ+i+N6g4S1PGyo++Jw4BZYINmkoju85k+M8zdhSnquu6ekSrHMzBHMzBHMzBHMzBHMzBHMzBHOzxwE5/9Tm7KzAW/vy2iqx6eW/bYBNC2kM14hlm9bFNQkZmDDcplAAxmAasnl4ng7tJpqTtzdpEcGZgqTWkM6XbAAUrDQzZ6mwMJ7GcLbYoW4AyhjMtQ4bqlFjKxEfu13AlgXWgWDS3MN7uJyjHaaBSQCkwHtNlORLObNPgMhoEO+drVI6jwTo73Gns7/e7H05lJfJtroV4JWQsPIhJKCzKTmLTSPm2FZAbjGeYhUaCE9brW8oa4zWREnuNRSWZE+x4PA5m4WqwxiR21ozt9/tgQ+9elxrHywLGYmazWSsoZXKdbcjX4j1tFNhutws/vtlsWtGHwyHqi8l1CJU+xlP3wBex820ejdjlchlamXVp0UdZ8TrCOPtxDIu36tFgIgatBRjHzAq2Xq9bIZc+s875SiyJWUTGIMRiu+eJygq2WCyCkPl83gv38/WZ7GsoiSGxJGYRYDzLl5ZcyhfZzw7G5Sjbs8w4CxWBMo4WojHGcHKvjFuUoRkYyhFrDc8hjGPt4DrKDc8q+FuVoekpFcoRwhiyz+CjJ6ao4zesNYAhU5IJnRn8Dx99b3EnwQyFvi41HuNStYSa5OyegaTPsFx62q/Ys3sNB+OdEJlEy4B38X1Mlxo2Fm45Y/7hzz/VOpiDOZiDOZiDOZiD3dL+AfhEglswX7gHAAAAAElFTkSuQmCC"/>
-                    </g>
-                  </svg>
-                  <p class="text-xl text-gray-600">|</p>
-                  <p class="font-bold text-sm text-white px-3">Disco-Lee</p>
-                  <div class="ml-auto pr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                      <path id="Path_165" data-name="Path 165" d="M10,0A10,10,0,0,0,1.326,14.978l-1.288,4a.781.781,0,0,0,.983.983l4-1.288A10,10,0,1,0,10,0Zm0,18.438a8.413,8.413,0,0,1-4.466-1.278.782.782,0,0,0-.654-.081l-2.888.93.93-2.888a.782.782,0,0,0-.081-.654A8.438,8.438,0,1,1,10,18.438ZM10.977,10A.977.977,0,1,1,10,9.023.977.977,0,0,1,10.977,10Zm3.906,0a.977.977,0,1,1-.977-.977A.977.977,0,0,1,14.883,10ZM7.07,10a.977.977,0,1,1-.977-.977A.977.977,0,0,1,7.07,10Z" fill="#8e8e8e"/>
+                  <button class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12.3" height="21.207" viewBox="0 0 12.3 21.207">
+                      <path id="Path_171" data-name="Path 171" d="M361.171,153.787c.67,1.16,10,10,10,10l-10,10" transform="translate(-360.305 -153.287)" fill="none" stroke="#8e8e8e" stroke-width="2" opacity="0.4"/>
                     </svg>
-                  </div>
-                </button>
-
-                <button class="flex items-center w-56 border rounded-full border-gray-600 bg-gray-600 bg-opacity-30 focus:outline-none">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="50" viewBox="0 0 70 60">
-                    <defs>
-                      <clipPath id="clip-path">
-                        <rect id="furnimatic_backdrop_bg" width="70" height="60" rx="30" transform="translate(400 830)" fill="#333"/>
-                      </clipPath>
-                    </defs>
-                    <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-400 -830)" clip-path="url(#clip-path)">
-                      <image id="avatarimage" width="54" height="62" transform="translate(410 826)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA+CAYAAABgFuiwAAACTElEQVR42u2ZQW7CMBBFc4H2AhWbik03bLpjVwkJsWLLgbhEl1ygZ+i+N6g4S1PGyo++Jw4BZYINmkoju85k+M8zdhSnquu6ekSrHMzBHMzBHMzBHMzBHMzBHMzBHOzxwE5/9Tm7KzAW/vy2iqx6eW/bYBNC2kM14hlm9bFNQkZmDDcplAAxmAasnl4ng7tJpqTtzdpEcGZgqTWkM6XbAAUrDQzZ6mwMJ7GcLbYoW4AyhjMtQ4bqlFjKxEfu13AlgXWgWDS3MN7uJyjHaaBSQCkwHtNlORLObNPgMhoEO+drVI6jwTo73Gns7/e7H05lJfJtroV4JWQsPIhJKCzKTmLTSPm2FZAbjGeYhUaCE9brW8oa4zWREnuNRSWZE+x4PA5m4WqwxiR21ozt9/tgQ+9elxrHywLGYmazWSsoZXKdbcjX4j1tFNhutws/vtlsWtGHwyHqi8l1CJU+xlP3wBex820ejdjlchlamXVp0UdZ8TrCOPtxDIu36tFgIgatBRjHzAq2Xq9bIZc+s875SiyJWUTGIMRiu+eJygq2WCyCkPl83gv38/WZ7GsoiSGxJGYRYDzLl5ZcyhfZzw7G5Sjbs8w4CxWBMo4WojHGcHKvjFuUoRkYyhFrDc8hjGPt4DrKDc8q+FuVoekpFcoRwhiyz+CjJ6ao4zesNYAhU5IJnRn8Dx99b3EnwQyFvi41HuNStYSa5OyegaTPsFx62q/Ys3sNB+OdEJlEy4B38X1Mlxo2Fm45Y/7hzz/VOpiDOZiDOZiDOZiD3dL+AfhEglswX7gHAAAAAElFTkSuQmCC"/>
-                    </g>
-                  </svg>
-                  <p class="text-xl text-gray-600">|</p>
-                  <p class="font-bold text-sm text-white px-3">Disco-Lee</p>
-                  <div class="ml-auto pr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                      <path id="Path_165" data-name="Path 165" d="M10,0A10,10,0,0,0,1.326,14.978l-1.288,4a.781.781,0,0,0,.983.983l4-1.288A10,10,0,1,0,10,0Zm0,18.438a8.413,8.413,0,0,1-4.466-1.278.782.782,0,0,0-.654-.081l-2.888.93.93-2.888a.782.782,0,0,0-.081-.654A8.438,8.438,0,1,1,10,18.438ZM10.977,10A.977.977,0,1,1,10,9.023.977.977,0,0,1,10.977,10Zm3.906,0a.977.977,0,1,1-.977-.977A.977.977,0,0,1,14.883,10ZM7.07,10a.977.977,0,1,1-.977-.977A.977.977,0,0,1,7.07,10Z" fill="#8e8e8e"/>
-                    </svg>
-                  </div>
-                </button>
+                  </button>
               </div>
-
-              <button class="py-3 px-6 border border-gray-600 rounded-full bg-gray-600 bg-opacity-30 focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="26" viewBox="0 0 6 26">
-                  <g id="Group_169" data-name="Group 169" transform="translate(-1736 -772)">
-                    <rect id="furnimatic_backdrop_bg" width="6" height="6" rx="3" transform="translate(1736 772)" fill="#8e8e8e"/>
-                    <rect id="furnimatic_backdrop_bg-2" data-name="furnimatic_backdrop_bg" width="6" height="6" rx="3" transform="translate(1736 782)" fill="#8e8e8e"/>
-                    <rect id="furnimatic_backdrop_bg-3" data-name="furnimatic_backdrop_bg" width="6" height="6" rx="3" transform="translate(1736 792)" fill="#8e8e8e"/>
-                  </g>
-                </svg>                  
-              </button>
-
-              <button class="focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12.3" height="21.207" viewBox="0 0 12.3 21.207">
-                  <path id="Path_171" data-name="Path 171" d="M361.171,153.787c.67,1.16,10,10,10,10l-10,10" transform="translate(-360.305 -153.287)" fill="none" stroke="#8e8e8e" stroke-width="2" opacity="0.4"/>
-                </svg>
-              </button>
             </div>
           </div>
 
-          <!-- latest news -->
-          <div class="px-20">
-            <div class="flex items-center space-x-4 pt-12 pb-4">
+          <!-- ========== latest news ========== -->
+          <div class="accordionMain px-20">
+            <div class="accordionBtn flex items-center cursor-pointer space-x-4 pt-12 pb-4">
               <button class="py-3 px-2.5 border border-gray-600 rounded-full bg-dark focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
                   <path id="Path_143" data-name="Path 143" d="M361.171,153.787c.4.7,6,6,6,6l-6,6" transform="translate(166.494 -360.305) rotate(90)" fill="none" stroke="#8e8e8e" stroke-width="2"/>
@@ -460,144 +462,146 @@
               <h1 class="text-3xl font-bold text-white">Latest news</h1>
             </div>
 
-            <!-- sorting button -->
-            <div class="flex items-center justify-between space-x-4 py-6">
-              <div>
-                <a class="font-bold text-sm bg-yellow rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">All news</a>
-                <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Maintenance</a>
-                <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Updates & Furni</a>
-                <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Events & Promo</a>
-                <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Bobba.biz</a>
-              </div>
-              <button class="p-3 bg-gray-700 bg-opacity-40 rounded-full focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                  <g id="refresh_1_" data-name="refresh (1)" transform="translate(-0.107)">
-                    <g id="Group_111" data-name="Group 111" transform="translate(0.107)">
-                      <path id="Path_122" data-name="Path 122" d="M16.107,7V0L13.756,2.35A8,8,0,1,0,15.837,10H13.756A6.03,6.03,0,1,1,12.33,3.775L9.1,7h7Z" transform="translate(-0.107)" fill="#fff"/>
+            <div class="h-0 transition-[height] duration-200 ease-in overflow-hidden border-b border-gray-700">
+                <!-- sorting button -->
+                <div class="flex items-center justify-between space-x-4 py-6">
+                <div>
+                  <a class="font-bold text-sm bg-yellow rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">All news</a>
+                  <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Maintenance</a>
+                  <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Updates & Furni</a>
+                  <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Events & Promo</a>
+                  <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Bobba.biz</a>
+                </div>
+                <button class="p-3 bg-gray-700 bg-opacity-40 rounded-full focus:outline-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <g id="refresh_1_" data-name="refresh (1)" transform="translate(-0.107)">
+                      <g id="Group_111" data-name="Group 111" transform="translate(0.107)">
+                        <path id="Path_122" data-name="Path 122" d="M16.107,7V0L13.756,2.35A8,8,0,1,0,15.837,10H13.756A6.03,6.03,0,1,1,12.33,3.775L9.1,7h7Z" transform="translate(-0.107)" fill="#fff"/>
+                      </g>
                     </g>
-                  </g>
-                </svg>
-              </button>
-            </div>
-
-            <!-- cards -->
-            <div class="grid grid-cols-4 gap-6">
-
-              <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
-                <div class="relative h-40 bg-light rounded-t-lg group-hover:bg-blue transition ease-in">
-                  <button class="absolute top-4 right-4 text-white bg-black rounded-full py-2.5 px-2 focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
-                      <g id="Group_168" data-name="Group 168" transform="translate(0 -64)">
-                        <path id="Path_29" data-name="Path 29" d="M12,64A12.806,12.806,0,0,0,0,73a12.808,12.808,0,0,0,12,9,12.808,12.808,0,0,0,12-9,12.806,12.806,0,0,0-12-9Zm0,15a6,6,0,1,1,6-6A6,6,0,0,1,12,79Z" fill="#fff"/>
-                        <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(2 1.5)" fill="#fff"/>
-                      </g>
-                    </svg>
-                  </button>
-                </div>
-                <div class="bg-black rounded-b-lg p-6">
-                  <h1 class="text-white text-lgfont-bold">Welcome to Bobba.biz</h1>
-                  <p class="text-primary text-sm py-3">Inside #Habbo2020: Everything you need to know about this new and amazing version</p>
-                  <a class="block uppercase w-28 py-2 px-3.5 bg-blue font-bold rounded-md group-hover:bg-yellow transition ease-in" href="#">See more</a>
-                </div>
+                  </svg>
+                </button>
               </div>
 
-              <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
-                <div class="relative h-40 bg-light rounded-t-lg group-hover:bg-blue transition ease-in">
-                  <button class="absolute top-4 right-4 bg-black rounded-full py-2.5 px-2 focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
-                      <g id="Group_168" data-name="Group 168" transform="translate(0 -64)">
-                        <path id="Path_29" data-name="Path 29" d="M12,64A12.806,12.806,0,0,0,0,73a12.808,12.808,0,0,0,12,9,12.808,12.808,0,0,0,12-9,12.806,12.806,0,0,0-12-9Zm0,15a6,6,0,1,1,6-6A6,6,0,0,1,12,79Z" fill="#fff"/>
-                        <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(2 1.5)" fill="#fff"/>
-                      </g>
-                    </svg>
-                  </button>
-                </div>
-                <div class="bg-black rounded-b-lg p-6">
-                  <h1 class="text-white text-lgfont-bold">Bunny is comming!</h1>
-                  <p class="text-primary text-sm py-3">Inside #Habbo2020: Everything you need to know about this new and amazing version</p>
-                  <a class="block uppercase w-28 py-2 px-3.5 bg-blue font-bold rounded-md group-hover:bg-yellow transition ease-in" href="#">See more</a>
-                </div>
-              </div>
-
-              <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
-                <div class="h-40 bg-light rounded-t-lg group-hover:bg-blue transition ease-in"></div>
-                <div class="bg-black rounded-b-lg p-6">
-                  <h1 class="text-white text-lgfont-bold">Join our team now</h1>
-                  <p class="text-primary text-sm py-3">Inside #Habbo2020: Everything you need to know about this new and amazing version</p>
-                  <a class="block uppercase w-28 py-2 px-3.5 bg-blue font-bold rounded-md group-hover:bg-yellow transition ease-in" href="#">See more</a>
-                </div>
-              </div>
-
-              <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
-                <div class="h-40 bg-light rounded-t-lg group-hover:bg-blue transition ease-in"></div>
-                <div class="bg-black rounded-b-lg p-6">
-                  <h1 class="text-white text-lgfont-bold">Bobba Awards 2020</h1>
-                  <p class="text-primary text-sm py-3">Inside #Habbo2020: Everything you need to know about this new and amazing version</p>
-                  <a class="flex items-center space-x-1 uppercase w-28 py-2 px-3.5 border border-gray-600 font-bold text-white rounded-md" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                      <g id="disturb" transform="translate(-174 221)" opacity="0.6">
-                        <g id="Group_1" data-name="Group 1" transform="translate(174 -221)">
-                          <path id="Path_1" data-name="Path 1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0ZM6.068,4.039a7.128,7.128,0,0,1,7.868,0L4.043,13.936A7.143,7.143,0,0,1,6.068,4.039Zm7.864,11.922a7.128,7.128,0,0,1-7.868,0l9.893-9.893A7.143,7.143,0,0,1,13.932,15.961Z" fill="#8e8e8e"/>
+              <!-- cards -->
+              <div class="grid grid-cols-4 gap-6">
+  
+                <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
+                  <div class="relative h-40 bg-light rounded-t-lg group-hover:bg-blue transition ease-in">
+                    <button class="absolute top-4 right-4 text-white bg-black rounded-full py-2.5 px-2 focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
+                        <g id="Group_168" data-name="Group 168" transform="translate(0 -64)">
+                          <path id="Path_29" data-name="Path 29" d="M12,64A12.806,12.806,0,0,0,0,73a12.808,12.808,0,0,0,12,9,12.808,12.808,0,0,0,12-9,12.806,12.806,0,0,0-12-9Zm0,15a6,6,0,1,1,6-6A6,6,0,0,1,12,79Z" fill="#fff"/>
+                          <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(2 1.5)" fill="#fff"/>
                         </g>
-                      </g>
-                    </svg>
-                    <p>Closed</p>
-                  </a>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="bg-black rounded-b-lg p-6">
+                    <h1 class="text-white text-lgfont-bold">Welcome to Bobba.biz</h1>
+                    <p class="text-primary text-sm py-3">Inside #Habbo2020: Everything you need to know about this new and amazing version</p>
+                    <a class="block uppercase w-28 py-2 px-3.5 bg-blue font-bold rounded-md group-hover:bg-yellow transition ease-in" href="#">See more</a>
+                  </div>
                 </div>
+  
+                <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
+                  <div class="relative h-40 bg-light rounded-t-lg group-hover:bg-blue transition ease-in">
+                    <button class="absolute top-4 right-4 bg-black rounded-full py-2.5 px-2 focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
+                        <g id="Group_168" data-name="Group 168" transform="translate(0 -64)">
+                          <path id="Path_29" data-name="Path 29" d="M12,64A12.806,12.806,0,0,0,0,73a12.808,12.808,0,0,0,12,9,12.808,12.808,0,0,0,12-9,12.806,12.806,0,0,0-12-9Zm0,15a6,6,0,1,1,6-6A6,6,0,0,1,12,79Z" fill="#fff"/>
+                          <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(2 1.5)" fill="#fff"/>
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="bg-black rounded-b-lg p-6">
+                    <h1 class="text-white text-lgfont-bold">Bunny is comming!</h1>
+                    <p class="text-primary text-sm py-3">Inside #Habbo2020: Everything you need to know about this new and amazing version</p>
+                    <a class="block uppercase w-28 py-2 px-3.5 bg-blue font-bold rounded-md group-hover:bg-yellow transition ease-in" href="#">See more</a>
+                  </div>
+                </div>
+  
+                <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
+                  <div class="h-40 bg-light rounded-t-lg group-hover:bg-blue transition ease-in"></div>
+                  <div class="bg-black rounded-b-lg p-6">
+                    <h1 class="text-white text-lgfont-bold">Join our team now</h1>
+                    <p class="text-primary text-sm py-3">Inside #Habbo2020: Everything you need to know about this new and amazing version</p>
+                    <a class="block uppercase w-28 py-2 px-3.5 bg-blue font-bold rounded-md group-hover:bg-yellow transition ease-in" href="#">See more</a>
+                  </div>
+                </div>
+  
+                <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
+                  <div class="h-40 bg-light rounded-t-lg group-hover:bg-blue transition ease-in"></div>
+                  <div class="bg-black rounded-b-lg p-6">
+                    <h1 class="text-white text-lgfont-bold">Bobba Awards 2020</h1>
+                    <p class="text-primary text-sm py-3">Inside #Habbo2020: Everything you need to know about this new and amazing version</p>
+                    <a class="flex items-center space-x-1 uppercase w-28 py-2 px-3.5 border border-gray-600 font-bold text-white rounded-md" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <g id="disturb" transform="translate(-174 221)" opacity="0.6">
+                          <g id="Group_1" data-name="Group 1" transform="translate(174 -221)">
+                            <path id="Path_1" data-name="Path 1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0ZM6.068,4.039a7.128,7.128,0,0,1,7.868,0L4.043,13.936A7.143,7.143,0,0,1,6.068,4.039Zm7.864,11.922a7.128,7.128,0,0,1-7.868,0l9.893-9.893A7.143,7.143,0,0,1,13.932,15.961Z" fill="#8e8e8e"/>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>Closed</p>
+                    </a>
+                  </div>
+                </div>
+  
+                <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
+                  <div class="h-40 bg-light rounded-t-lg group-hover:bg-blue transition ease-in"></div>
+                  <div class="bg-black rounded-b-lg p-6">
+                    <h1 class="text-white text-lgfont-bold">Quarentine Bobba.biz</h1>
+                    <p class="text-primary text-sm py-3">Inside #Habbo2020: Everything you need to know about this new and amazing version</p>
+                    <a class="block uppercase w-28 py-2 px-3.5 bg-blue font-bold rounded-md group-hover:bg-yellow transition ease-in" href="#">See more</a>
+                  </div>
+                </div>
+  
+                <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
+                  <div class="h-40 bg-light rounded-t-lg group-hover:bg-blue transition ease-in"></div>
+                  <div class="bg-black rounded-b-lg p-6">
+                    <h1 class="text-white text-lgfont-bold">Send your opinions here</h1>
+                    <p class="text-primary text-sm py-3">Inside #Habbo2020: Everything you need to know about this new and amazing version</p>
+                    <a class="block uppercase w-28 py-2 px-3.5 bg-blue font-bold rounded-md group-hover:bg-yellow transition ease-in" href="#">See more</a>
+                  </div>
+                </div>
+  
+                <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
+                  <div class="h-40 bg-light rounded-t-lg group-hover:bg-blue transition ease-in"></div>
+                  <div class="bg-black rounded-b-lg p-6">
+                    <h1 class="text-white text-lgfont-bold">Found any bugs? Report</h1>
+                    <p class="text-primary text-sm py-3">Inside #Habbo2020: Everything you need to know about this new and amazing version</p>
+                    <a class="block uppercase w-28 py-2 px-3.5 bg-blue font-bold rounded-md group-hover:bg-yellow transition ease-in" href="#">See more</a>
+                  </div>
+                </div>
+  
+                <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
+                  <div class="h-40 bg-light rounded-t-lg group-hover:bg-blue transition ease-in"></div>
+                  <div class="bg-black rounded-b-lg p-6">
+                    <h1 class="text-white text-lgfont-bold">We're here guys</h1>
+                    <p class="text-primary text-sm py-3">Inside #Habbo2020: Everything you need to know about this new and amazing version</p>
+                    <a class="block uppercase w-28 py-2 px-3.5 bg-blue font-bold rounded-md group-hover:bg-yellow transition ease-in" href="#">See more</a>
+                  </div>
+                </div>
+  
               </div>
 
-              <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
-                <div class="h-40 bg-light rounded-t-lg group-hover:bg-blue transition ease-in"></div>
-                <div class="bg-black rounded-b-lg p-6">
-                  <h1 class="text-white text-lgfont-bold">Quarentine Bobba.biz</h1>
-                  <p class="text-primary text-sm py-3">Inside #Habbo2020: Everything you need to know about this new and amazing version</p>
-                  <a class="block uppercase w-28 py-2 px-3.5 bg-blue font-bold rounded-md group-hover:bg-yellow transition ease-in" href="#">See more</a>
-                </div>
+              <!-- pagination -->
+              <div class="flex space-x-2 pt-6 pb-10">
+                <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">1</button>
+                <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">2</button>
+                <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">3</button>
+                <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">4</button>
+                <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">5</button>
+                <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-2.5 focus:outline-none hover:border-[#2580DC] hover:text-white">...</button>
               </div>
-
-              <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
-                <div class="h-40 bg-light rounded-t-lg group-hover:bg-blue transition ease-in"></div>
-                <div class="bg-black rounded-b-lg p-6">
-                  <h1 class="text-white text-lgfont-bold">Send your opinions here</h1>
-                  <p class="text-primary text-sm py-3">Inside #Habbo2020: Everything you need to know about this new and amazing version</p>
-                  <a class="block uppercase w-28 py-2 px-3.5 bg-blue font-bold rounded-md group-hover:bg-yellow transition ease-in" href="#">See more</a>
-                </div>
-              </div>
-
-              <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
-                <div class="h-40 bg-light rounded-t-lg group-hover:bg-blue transition ease-in"></div>
-                <div class="bg-black rounded-b-lg p-6">
-                  <h1 class="text-white text-lgfont-bold">Found any bugs? Report</h1>
-                  <p class="text-primary text-sm py-3">Inside #Habbo2020: Everything you need to know about this new and amazing version</p>
-                  <a class="block uppercase w-28 py-2 px-3.5 bg-blue font-bold rounded-md group-hover:bg-yellow transition ease-in" href="#">See more</a>
-                </div>
-              </div>
-
-              <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
-                <div class="h-40 bg-light rounded-t-lg group-hover:bg-blue transition ease-in"></div>
-                <div class="bg-black rounded-b-lg p-6">
-                  <h1 class="text-white text-lgfont-bold">We're here guys</h1>
-                  <p class="text-primary text-sm py-3">Inside #Habbo2020: Everything you need to know about this new and amazing version</p>
-                  <a class="block uppercase w-28 py-2 px-3.5 bg-blue font-bold rounded-md group-hover:bg-yellow transition ease-in" href="#">See more</a>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- pagination -->
-            <div class="flex border-b border-gray-700 space-x-2 pt-6 pb-10">
-              <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">1</button>
-              <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">2</button>
-              <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">3</button>
-              <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">4</button>
-              <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">5</button>
-              <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-2.5 focus:outline-none hover:border-[#2580DC] hover:text-white">...</button>
             </div>
           </div>
 
-          <!-- trade on marketplace -->
-          <div class="px-20">
-            <div class="flex items-center space-x-4 pt-12 pb-4">
+          <!-- ========== trade on marketplace ========== -->
+          <div class="accordionMain px-20">
+            <div class="accordionBtn flex items-center cursor-pointer space-x-4 pt-12 pb-4">
               <button class="py-3 px-2.5 border border-gray-600 rounded-full bg-dark focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
                   <path id="Path_143" data-name="Path 143" d="M361.171,153.787c.4.7,6,6,6,6l-6,6" transform="translate(166.494 -360.305) rotate(90)" fill="none" stroke="#8e8e8e" stroke-width="2"/>
@@ -606,9 +610,10 @@
               <h1 class="text-3xl font-bold text-white">Trade on Marketplace</h1>
             </div>
 
-            <div class="flex items-center">
-              <!-- left -->
-              <div class="w-1/2 border border-[#247FDA] bg-dark rounded-lg p-6">
+            <div class="h-0 transition-[height] duration-200 ease-in overflow-hidden border-b border-gray-700">
+              <div class="flex items-center py-12">
+                  <!-- left -->
+              <div class="w-1/2 border border-[#247FDA] bg-dark rounded-lg h-full p-6">
 
                 <!-- top -->
                 <div class="flex space-x-6 border-b border-gray-700 pb-4">
@@ -728,10 +733,11 @@
                     </a>
                   </div>
               </div>
+              </div>
             </div>
           </div>
 
-          <!-- discord -->
+          <!-- ========== discord ========== -->
           <div class="px-20 py-20">
             <div class="relative flex items-center justify-between bg-[#7289DA] rounded-lg p-12">
               <div class="flex items-center space-x-4">
@@ -758,9 +764,9 @@
             </div>
           </div>
 
-          <!-- most popular rooms -->
-          <div class="px-20">
-            <div class="flex items-center space-x-4 pt-12 pb-4">
+          <!-- ========== most popular rooms ========== -->
+          <div class="accordionMain px-20">
+            <div class="accordionBtn flex items-center space-x-4 cursor-pointer pt-12 pb-4">
               <button class="py-3 px-2.5 border border-gray-600 rounded-full bg-dark focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
                   <path id="Path_143" data-name="Path 143" d="M361.171,153.787c.4.7,6,6,6,6l-6,6" transform="translate(166.494 -360.305) rotate(90)" fill="none" stroke="#8e8e8e" stroke-width="2"/>
@@ -769,331 +775,333 @@
               <h1 class="text-3xl font-bold text-white">Most popular rooms</h1>
             </div>
 
-            <!-- sorting button -->
-            <div class="flex items-center justify-between space-x-4 py-6">
-              <div>
-                <a class="font-bold text-sm bg-yellow rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">All rooms</a>
-                <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Event rooms</a>
-                <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Top rating rooms</a>
-                <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Popular rooms</a>
-                <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Friend's room</a>
-                <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Already visited</a>
-              </div>
-              <button class="p-3 bg-gray-700 bg-opacity-40 rounded-full focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                  <g id="refresh_1_" data-name="refresh (1)" transform="translate(-0.107)">
-                    <g id="Group_111" data-name="Group 111" transform="translate(0.107)">
-                      <path id="Path_122" data-name="Path 122" d="M16.107,7V0L13.756,2.35A8,8,0,1,0,15.837,10H13.756A6.03,6.03,0,1,1,12.33,3.775L9.1,7h7Z" transform="translate(-0.107)" fill="#fff"/>
+            <div class="h-0 transition-[height] duration-200 ease-in overflow-hidden border-b border-gray-700">
+                <!-- sorting button -->
+              <div class="flex items-center justify-between space-x-4 py-6">
+                <div>
+                  <a class="font-bold text-sm bg-yellow rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">All rooms</a>
+                  <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Event rooms</a>
+                  <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Top rating rooms</a>
+                  <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Popular rooms</a>
+                  <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Friend's room</a>
+                  <a class="font-bold text-white text-sm bg-gray-700 bg-opacity-30 rounded-full py-2 px-5 hover:bg-yellow hover:text-black transition ease-in" href="#">Already visited</a>
+                </div>
+                <button class="p-3 bg-gray-700 bg-opacity-40 rounded-full focus:outline-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <g id="refresh_1_" data-name="refresh (1)" transform="translate(-0.107)">
+                      <g id="Group_111" data-name="Group 111" transform="translate(0.107)">
+                        <path id="Path_122" data-name="Path 122" d="M16.107,7V0L13.756,2.35A8,8,0,1,0,15.837,10H13.756A6.03,6.03,0,1,1,12.33,3.775L9.1,7h7Z" transform="translate(-0.107)" fill="#fff"/>
+                      </g>
                     </g>
-                  </g>
-                </svg>
-              </button>
-            </div>
-
-            <!-- cards -->
-            <div class="grid grid-cols-4 gap-6">
-
-              <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
-                <div class="relative h-28 bg-light rounded-t-lg group-hover:bg-blue transition ease-in">
-                  <button class="absolute top-4 right-4 bg-black rounded-full py-2.5 px-2 focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
-                      <g id="Group_168" data-name="Group 168" transform="translate(0 -64)">
-                        <path id="Path_29" data-name="Path 29" d="M12,64A12.806,12.806,0,0,0,0,73a12.808,12.808,0,0,0,12,9,12.808,12.808,0,0,0,12-9,12.806,12.806,0,0,0-12-9Zm0,15a6,6,0,1,1,6-6A6,6,0,0,1,12,79Z" fill="#fff"/>
-                        <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(2 1.5)" fill="#fff"/>
-                      </g>
-                    </svg>
-                  </button>
-                </div>
-                <div class="bg-black rounded-b-lg p-6">
-                  <h1 class="text-white text-lgfont-bold">Ø Paradise of Rares Ø</h1>
-                  <div class="flex items-center space-x-1 border-b border-gray-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                      <path id="Union_84" data-name="Union 84" d="M1.372,12A1.371,1.371,0,0,1,0,10.628,3.429,3.429,0,0,1,3.429,7.2H8.572A3.428,3.428,0,0,1,12,10.628,1.371,1.371,0,0,1,10.628,12ZM3,3A3,3,0,1,1,6,6,3,3,0,0,1,3,3Z" fill="#fff"/>
-                    </svg>
-                    <p class="text-primary text-sm py-3">Room by <a href="#" class="text-white font-bold">Guilherme03</a></p>
-                  </div>
-                  <div class="flex justify-between pt-4">
-                    <div>
-                      <p class="text-white font-bold text-sm">Room rating:</p>
-                      <div class="flex space-x-4 pt-4">
-                        <button class="py-1.5 px-2.5 border rounded border-[#247FDA] focus:outline-none">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                            <path id="Union_76" data-name="Union 76" d="M.857,12A.857.857,0,0,1,0,11.143V4.286a.857.857,0,0,1,.857-.857h.857V12ZM2.572,9.857V5.372a2.142,2.142,0,0,1,.55-1.433L6.539.142A.428.428,0,0,1,6.961.013L7.59.17A1.285,1.285,0,0,1,8.4,2.042L7.51,3.649a.429.429,0,0,0,.375.637h2.532a1.583,1.583,0,0,1,1.542,1.939l-.915,4.2A2.148,2.148,0,0,1,8.978,12H4.714A2.145,2.145,0,0,1,2.572,9.857Z" fill="#fff"/>
-                          </svg>
-                        </button>
-                        <button class="py-1.5 px-2.5 border rounded border-gray-700 focus:outline-none">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                            <path id="Union_77" data-name="Union 77" d="M.857,12A.857.857,0,0,1,0,11.143V4.286a.857.857,0,0,1,.857-.857h.857V12ZM2.572,9.857V5.372a2.142,2.142,0,0,1,.55-1.433L6.539.142A.428.428,0,0,1,6.961.013L7.59.17A1.285,1.285,0,0,1,8.4,2.041L7.51,3.649a.429.429,0,0,0,.375.637h2.532a1.583,1.583,0,0,1,1.542,1.939l-.915,4.2A2.148,2.148,0,0,1,8.978,12H4.714A2.145,2.145,0,0,1,2.572,9.857Z" transform="translate(12 12) rotate(180)" fill="#8e8e8e"/>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="pr-6">
-                      <div class="flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
-                          <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
-                            <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
-                            <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
-                          </g>
-                        </svg>
-                        <p class="text-white">2504</p>
-                      </div>
-                      <div class="flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
-                          <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
-                            <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
-                            <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
-                          </g>
-                        </svg>
-                        <p class="text-white">12934</p>
-                      </div>
-                      <div class="flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
-                          <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
-                            <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
-                            <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
-                          </g>
-                        </svg>
-                        <p class="text-white">94/100</p>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="block uppercase text-center bg-yellow font-bold rounded-md py-2 mt-4" href="#">See more</a>
-                </div>
+                  </svg>
+                </button>
               </div>
 
-              <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
-                <div class="relative h-28 bg-light rounded-t-lg group-hover:bg-blue transition ease-in">
-                  <button class="absolute top-4 right-4 bg-black rounded-full py-2.5 px-2 focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
-                      <g id="Group_168" data-name="Group 168" transform="translate(0 -64)">
-                        <path id="Path_29" data-name="Path 29" d="M12,64A12.806,12.806,0,0,0,0,73a12.808,12.808,0,0,0,12,9,12.808,12.808,0,0,0,12-9,12.806,12.806,0,0,0-12-9Zm0,15a6,6,0,1,1,6-6A6,6,0,0,1,12,79Z" fill="#fff"/>
-                        <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(2 1.5)" fill="#fff"/>
-                      </g>
-                    </svg>
-                  </button>
-                </div>
-                <div class="bg-black rounded-b-lg p-6">
-                  <h1 class="text-white text-lgfont-bold">Ø Paradise of Rares Ø</h1>
-                  <div class="flex items-center space-x-1 border-b border-gray-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                      <path id="Union_84" data-name="Union 84" d="M1.372,12A1.371,1.371,0,0,1,0,10.628,3.429,3.429,0,0,1,3.429,7.2H8.572A3.428,3.428,0,0,1,12,10.628,1.371,1.371,0,0,1,10.628,12ZM3,3A3,3,0,1,1,6,6,3,3,0,0,1,3,3Z" fill="#fff"/>
-                    </svg>
-                    <p class="text-primary text-sm py-3">Room by <a href="#" class="text-white font-bold">Janjaodoto</a></p>
-                  </div>
-                  <div class="flex justify-between pt-4">
-                    <div>
-                      <p class="text-white font-bold text-sm">Room rating:</p>
-                      <div class="flex space-x-4 pt-4">
-                        <button class="py-1.5 px-2.5 border rounded border-[#247FDA] focus:outline-none">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                            <path id="Union_76" data-name="Union 76" d="M.857,12A.857.857,0,0,1,0,11.143V4.286a.857.857,0,0,1,.857-.857h.857V12ZM2.572,9.857V5.372a2.142,2.142,0,0,1,.55-1.433L6.539.142A.428.428,0,0,1,6.961.013L7.59.17A1.285,1.285,0,0,1,8.4,2.042L7.51,3.649a.429.429,0,0,0,.375.637h2.532a1.583,1.583,0,0,1,1.542,1.939l-.915,4.2A2.148,2.148,0,0,1,8.978,12H4.714A2.145,2.145,0,0,1,2.572,9.857Z" fill="#fff"/>
-                          </svg>
-                        </button>
-                        <button class="py-1.5 px-2.5 border rounded border-gray-700 focus:outline-none">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                            <path id="Union_77" data-name="Union 77" d="M.857,12A.857.857,0,0,1,0,11.143V4.286a.857.857,0,0,1,.857-.857h.857V12ZM2.572,9.857V5.372a2.142,2.142,0,0,1,.55-1.433L6.539.142A.428.428,0,0,1,6.961.013L7.59.17A1.285,1.285,0,0,1,8.4,2.041L7.51,3.649a.429.429,0,0,0,.375.637h2.532a1.583,1.583,0,0,1,1.542,1.939l-.915,4.2A2.148,2.148,0,0,1,8.978,12H4.714A2.145,2.145,0,0,1,2.572,9.857Z" transform="translate(12 12) rotate(180)" fill="#8e8e8e"/>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="pr-6">
-                      <div class="flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
-                          <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
-                            <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
-                            <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
-                          </g>
-                        </svg>
-                        <p class="text-white">2504</p>
-                      </div>
-                      <div class="flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
-                          <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
-                            <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
-                            <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
-                          </g>
-                        </svg>
-                        <p class="text-white">12934</p>
-                      </div>
-                      <div class="flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
-                          <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
-                            <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
-                            <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
-                          </g>
-                        </svg>
-                        <p class="text-white">94/100</p>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="block uppercase text-center bg-light font-bold rounded-md py-2 mt-4" href="#">room is full</a>
-                </div>
-              </div>
-
-              <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
-                <div class="relative h-28 bg-light rounded-t-lg group-hover:bg-blue transition ease-in">
-                  <button class="absolute top-4 right-4 bg-black rounded-full py-2.5 px-2 focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
-                      <g id="Group_168" data-name="Group 168" transform="translate(0 -64)">
-                        <path id="Path_29" data-name="Path 29" d="M12,64A12.806,12.806,0,0,0,0,73a12.808,12.808,0,0,0,12,9,12.808,12.808,0,0,0,12-9,12.806,12.806,0,0,0-12-9Zm0,15a6,6,0,1,1,6-6A6,6,0,0,1,12,79Z" fill="#fff"/>
-                        <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(2 1.5)" fill="#fff"/>
-                      </g>
-                    </svg>
-                  </button>
-                </div>
-                <div class="bg-black rounded-b-lg p-6">
-                  <h1 class="text-white text-lgfont-bold">Ø Paradise of Rares Ø</h1>
-                  <div class="flex items-center space-x-1 border-b border-gray-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                      <path id="Union_84" data-name="Union 84" d="M1.372,12A1.371,1.371,0,0,1,0,10.628,3.429,3.429,0,0,1,3.429,7.2H8.572A3.428,3.428,0,0,1,12,10.628,1.371,1.371,0,0,1,10.628,12ZM3,3A3,3,0,1,1,6,6,3,3,0,0,1,3,3Z" fill="#fff"/>
-                    </svg>
-                    <p class="text-primary text-sm py-3">Room by <a href="#" class="text-white font-bold">Claudio</a></p>
-                  </div>
-                  <div class="flex justify-between pt-4">
-                    <div>
-                      <p class="text-white font-bold text-sm">Room rating:</p>
-                      <div class="flex space-x-4 pt-4">
-                        <button class="py-1.5 px-2.5 border rounded border-[#247FDA] focus:outline-none">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                            <path id="Union_76" data-name="Union 76" d="M.857,12A.857.857,0,0,1,0,11.143V4.286a.857.857,0,0,1,.857-.857h.857V12ZM2.572,9.857V5.372a2.142,2.142,0,0,1,.55-1.433L6.539.142A.428.428,0,0,1,6.961.013L7.59.17A1.285,1.285,0,0,1,8.4,2.042L7.51,3.649a.429.429,0,0,0,.375.637h2.532a1.583,1.583,0,0,1,1.542,1.939l-.915,4.2A2.148,2.148,0,0,1,8.978,12H4.714A2.145,2.145,0,0,1,2.572,9.857Z" fill="#fff"/>
-                          </svg>
-                        </button>
-                        <button class="py-1.5 px-2.5 border rounded border-gray-700 focus:outline-none">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                            <path id="Union_77" data-name="Union 77" d="M.857,12A.857.857,0,0,1,0,11.143V4.286a.857.857,0,0,1,.857-.857h.857V12ZM2.572,9.857V5.372a2.142,2.142,0,0,1,.55-1.433L6.539.142A.428.428,0,0,1,6.961.013L7.59.17A1.285,1.285,0,0,1,8.4,2.041L7.51,3.649a.429.429,0,0,0,.375.637h2.532a1.583,1.583,0,0,1,1.542,1.939l-.915,4.2A2.148,2.148,0,0,1,8.978,12H4.714A2.145,2.145,0,0,1,2.572,9.857Z" transform="translate(12 12) rotate(180)" fill="#8e8e8e"/>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="pr-6">
-                      <div class="flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
-                          <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
-                            <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
-                            <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
-                          </g>
-                        </svg>
-                        <p class="text-white">2504</p>
-                      </div>
-                      <div class="flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
-                          <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
-                            <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
-                            <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
-                          </g>
-                        </svg>
-                        <p class="text-white">12934</p>
-                      </div>
-                      <div class="flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
-                          <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
-                            <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
-                            <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
-                          </g>
-                        </svg>
-                        <p class="text-white">94/100</p>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="block uppercase text-center bg-blue font-bold rounded-md py-2 mt-4" href="#">join room</a>
-                </div>
-              </div>
-
-              <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
-                <div class="relative h-28 bg-light rounded-t-lg group-hover:bg-blue transition ease-in">
-                  <button class="absolute top-4 right-4 bg-black rounded-full py-2.5 px-2 focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
-                      <g id="Group_168" data-name="Group 168" transform="translate(0 -64)">
-                        <path id="Path_29" data-name="Path 29" d="M12,64A12.806,12.806,0,0,0,0,73a12.808,12.808,0,0,0,12,9,12.808,12.808,0,0,0,12-9,12.806,12.806,0,0,0-12-9Zm0,15a6,6,0,1,1,6-6A6,6,0,0,1,12,79Z" fill="#fff"/>
-                        <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(2 1.5)" fill="#fff"/>
-                      </g>
-                    </svg>
-                  </button>
-                </div>
-                <div class="bg-black rounded-b-lg p-6">
-                  <h1 class="text-white text-lgfont-bold">Ø Paradise of Rares Ø</h1>
-                  <div class="flex items-center space-x-1 border-b border-gray-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                      <path id="Union_84" data-name="Union 84" d="M1.372,12A1.371,1.371,0,0,1,0,10.628,3.429,3.429,0,0,1,3.429,7.2H8.572A3.428,3.428,0,0,1,12,10.628,1.371,1.371,0,0,1,10.628,12ZM3,3A3,3,0,1,1,6,6,3,3,0,0,1,3,3Z" fill="#fff"/>
-                    </svg>
-                    <p class="text-primary text-sm py-3">Room by <a href="#" class="text-white font-bold">Disco-Lee</a></p>
-                  </div>
-                  <div class="flex justify-between pt-4">
-                    <div>
-                      <p class="text-white font-bold text-sm">Room rating:</p>
-                      <div class="flex space-x-4 pt-4">
-                        <button class="py-1.5 px-2.5 border rounded border-[#247FDA] focus:outline-none">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                            <path id="Union_76" data-name="Union 76" d="M.857,12A.857.857,0,0,1,0,11.143V4.286a.857.857,0,0,1,.857-.857h.857V12ZM2.572,9.857V5.372a2.142,2.142,0,0,1,.55-1.433L6.539.142A.428.428,0,0,1,6.961.013L7.59.17A1.285,1.285,0,0,1,8.4,2.042L7.51,3.649a.429.429,0,0,0,.375.637h2.532a1.583,1.583,0,0,1,1.542,1.939l-.915,4.2A2.148,2.148,0,0,1,8.978,12H4.714A2.145,2.145,0,0,1,2.572,9.857Z" fill="#fff"/>
-                          </svg>
-                        </button>
-                        <button class="py-1.5 px-2.5 border rounded border-gray-700 focus:outline-none">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                            <path id="Union_77" data-name="Union 77" d="M.857,12A.857.857,0,0,1,0,11.143V4.286a.857.857,0,0,1,.857-.857h.857V12ZM2.572,9.857V5.372a2.142,2.142,0,0,1,.55-1.433L6.539.142A.428.428,0,0,1,6.961.013L7.59.17A1.285,1.285,0,0,1,8.4,2.041L7.51,3.649a.429.429,0,0,0,.375.637h2.532a1.583,1.583,0,0,1,1.542,1.939l-.915,4.2A2.148,2.148,0,0,1,8.978,12H4.714A2.145,2.145,0,0,1,2.572,9.857Z" transform="translate(12 12) rotate(180)" fill="#8e8e8e"/>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="pr-6">
-                      <div class="flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
-                          <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
-                            <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
-                            <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
-                          </g>
-                        </svg>
-                        <p class="text-white">2504</p>
-                      </div>
-                      <div class="flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
-                          <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
-                            <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
-                            <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
-                          </g>
-                        </svg>
-                        <p class="text-white">12934</p>
-                      </div>
-                      <div class="flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
-                          <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
-                            <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
-                            <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
-                          </g>
-                        </svg>
-                        <p class="text-white">94/100</p>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="flex items-center justify-center space-x-1 uppercase py-2 mt-4 border border-gray-600 font-bold text-white rounded-md" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                      <g id="disturb" transform="translate(-174 221)" opacity="0.6">
-                        <g id="Group_1" data-name="Group 1" transform="translate(174 -221)">
-                          <path id="Path_1" data-name="Path 1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0ZM6.068,4.039a7.128,7.128,0,0,1,7.868,0L4.043,13.936A7.143,7.143,0,0,1,6.068,4.039Zm7.864,11.922a7.128,7.128,0,0,1-7.868,0l9.893-9.893A7.143,7.143,0,0,1,13.932,15.961Z" fill="#8e8e8e"/>
+              <!-- cards -->
+              <div class="grid grid-cols-4 gap-6">
+  
+                <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
+                  <div class="relative h-28 bg-light rounded-t-lg group-hover:bg-blue transition ease-in">
+                    <button class="absolute top-4 right-4 bg-black rounded-full py-2.5 px-2 focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
+                        <g id="Group_168" data-name="Group 168" transform="translate(0 -64)">
+                          <path id="Path_29" data-name="Path 29" d="M12,64A12.806,12.806,0,0,0,0,73a12.808,12.808,0,0,0,12,9,12.808,12.808,0,0,0,12-9,12.806,12.806,0,0,0-12-9Zm0,15a6,6,0,1,1,6-6A6,6,0,0,1,12,79Z" fill="#fff"/>
+                          <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(2 1.5)" fill="#fff"/>
                         </g>
-                      </g>
-                    </svg>
-                    <p>Closed</p>
-                  </a>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="bg-black rounded-b-lg p-6">
+                    <h1 class="text-white text-lgfont-bold">Ø Paradise of Rares Ø</h1>
+                    <div class="flex items-center space-x-1 border-b border-gray-700">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                        <path id="Union_84" data-name="Union 84" d="M1.372,12A1.371,1.371,0,0,1,0,10.628,3.429,3.429,0,0,1,3.429,7.2H8.572A3.428,3.428,0,0,1,12,10.628,1.371,1.371,0,0,1,10.628,12ZM3,3A3,3,0,1,1,6,6,3,3,0,0,1,3,3Z" fill="#fff"/>
+                      </svg>
+                      <p class="text-primary text-sm py-3">Room by <a href="#" class="text-white font-bold">Guilherme03</a></p>
+                    </div>
+                    <div class="flex justify-between pt-4">
+                      <div>
+                        <p class="text-white font-bold text-sm">Room rating:</p>
+                        <div class="flex space-x-4 pt-4">
+                          <button class="py-1.5 px-2.5 border rounded border-[#247FDA] focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                              <path id="Union_76" data-name="Union 76" d="M.857,12A.857.857,0,0,1,0,11.143V4.286a.857.857,0,0,1,.857-.857h.857V12ZM2.572,9.857V5.372a2.142,2.142,0,0,1,.55-1.433L6.539.142A.428.428,0,0,1,6.961.013L7.59.17A1.285,1.285,0,0,1,8.4,2.042L7.51,3.649a.429.429,0,0,0,.375.637h2.532a1.583,1.583,0,0,1,1.542,1.939l-.915,4.2A2.148,2.148,0,0,1,8.978,12H4.714A2.145,2.145,0,0,1,2.572,9.857Z" fill="#fff"/>
+                            </svg>
+                          </button>
+                          <button class="py-1.5 px-2.5 border rounded border-gray-700 focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                              <path id="Union_77" data-name="Union 77" d="M.857,12A.857.857,0,0,1,0,11.143V4.286a.857.857,0,0,1,.857-.857h.857V12ZM2.572,9.857V5.372a2.142,2.142,0,0,1,.55-1.433L6.539.142A.428.428,0,0,1,6.961.013L7.59.17A1.285,1.285,0,0,1,8.4,2.041L7.51,3.649a.429.429,0,0,0,.375.637h2.532a1.583,1.583,0,0,1,1.542,1.939l-.915,4.2A2.148,2.148,0,0,1,8.978,12H4.714A2.145,2.145,0,0,1,2.572,9.857Z" transform="translate(12 12) rotate(180)" fill="#8e8e8e"/>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="pr-6">
+                        <div class="flex items-center space-x-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
+                            <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
+                              <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
+                              <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
+                            </g>
+                          </svg>
+                          <p class="text-white">2504</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
+                            <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
+                              <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
+                              <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
+                            </g>
+                          </svg>
+                          <p class="text-white">12934</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
+                            <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
+                              <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
+                              <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
+                            </g>
+                          </svg>
+                          <p class="text-white">94/100</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="block uppercase text-center bg-yellow font-bold rounded-md py-2 mt-4" href="#">See more</a>
+                  </div>
                 </div>
+  
+                <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
+                  <div class="relative h-28 bg-light rounded-t-lg group-hover:bg-blue transition ease-in">
+                    <button class="absolute top-4 right-4 bg-black rounded-full py-2.5 px-2 focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
+                        <g id="Group_168" data-name="Group 168" transform="translate(0 -64)">
+                          <path id="Path_29" data-name="Path 29" d="M12,64A12.806,12.806,0,0,0,0,73a12.808,12.808,0,0,0,12,9,12.808,12.808,0,0,0,12-9,12.806,12.806,0,0,0-12-9Zm0,15a6,6,0,1,1,6-6A6,6,0,0,1,12,79Z" fill="#fff"/>
+                          <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(2 1.5)" fill="#fff"/>
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="bg-black rounded-b-lg p-6">
+                    <h1 class="text-white text-lgfont-bold">Ø Paradise of Rares Ø</h1>
+                    <div class="flex items-center space-x-1 border-b border-gray-700">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                        <path id="Union_84" data-name="Union 84" d="M1.372,12A1.371,1.371,0,0,1,0,10.628,3.429,3.429,0,0,1,3.429,7.2H8.572A3.428,3.428,0,0,1,12,10.628,1.371,1.371,0,0,1,10.628,12ZM3,3A3,3,0,1,1,6,6,3,3,0,0,1,3,3Z" fill="#fff"/>
+                      </svg>
+                      <p class="text-primary text-sm py-3">Room by <a href="#" class="text-white font-bold">Janjaodoto</a></p>
+                    </div>
+                    <div class="flex justify-between pt-4">
+                      <div>
+                        <p class="text-white font-bold text-sm">Room rating:</p>
+                        <div class="flex space-x-4 pt-4">
+                          <button class="py-1.5 px-2.5 border rounded border-[#247FDA] focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                              <path id="Union_76" data-name="Union 76" d="M.857,12A.857.857,0,0,1,0,11.143V4.286a.857.857,0,0,1,.857-.857h.857V12ZM2.572,9.857V5.372a2.142,2.142,0,0,1,.55-1.433L6.539.142A.428.428,0,0,1,6.961.013L7.59.17A1.285,1.285,0,0,1,8.4,2.042L7.51,3.649a.429.429,0,0,0,.375.637h2.532a1.583,1.583,0,0,1,1.542,1.939l-.915,4.2A2.148,2.148,0,0,1,8.978,12H4.714A2.145,2.145,0,0,1,2.572,9.857Z" fill="#fff"/>
+                            </svg>
+                          </button>
+                          <button class="py-1.5 px-2.5 border rounded border-gray-700 focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                              <path id="Union_77" data-name="Union 77" d="M.857,12A.857.857,0,0,1,0,11.143V4.286a.857.857,0,0,1,.857-.857h.857V12ZM2.572,9.857V5.372a2.142,2.142,0,0,1,.55-1.433L6.539.142A.428.428,0,0,1,6.961.013L7.59.17A1.285,1.285,0,0,1,8.4,2.041L7.51,3.649a.429.429,0,0,0,.375.637h2.532a1.583,1.583,0,0,1,1.542,1.939l-.915,4.2A2.148,2.148,0,0,1,8.978,12H4.714A2.145,2.145,0,0,1,2.572,9.857Z" transform="translate(12 12) rotate(180)" fill="#8e8e8e"/>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="pr-6">
+                        <div class="flex items-center space-x-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
+                            <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
+                              <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
+                              <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
+                            </g>
+                          </svg>
+                          <p class="text-white">2504</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
+                            <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
+                              <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
+                              <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
+                            </g>
+                          </svg>
+                          <p class="text-white">12934</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
+                            <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
+                              <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
+                              <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
+                            </g>
+                          </svg>
+                          <p class="text-white">94/100</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="block uppercase text-center bg-light font-bold rounded-md py-2 mt-4" href="#">room is full</a>
+                  </div>
+                </div>
+  
+                <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
+                  <div class="relative h-28 bg-light rounded-t-lg group-hover:bg-blue transition ease-in">
+                    <button class="absolute top-4 right-4 bg-black rounded-full py-2.5 px-2 focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
+                        <g id="Group_168" data-name="Group 168" transform="translate(0 -64)">
+                          <path id="Path_29" data-name="Path 29" d="M12,64A12.806,12.806,0,0,0,0,73a12.808,12.808,0,0,0,12,9,12.808,12.808,0,0,0,12-9,12.806,12.806,0,0,0-12-9Zm0,15a6,6,0,1,1,6-6A6,6,0,0,1,12,79Z" fill="#fff"/>
+                          <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(2 1.5)" fill="#fff"/>
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="bg-black rounded-b-lg p-6">
+                    <h1 class="text-white text-lgfont-bold">Ø Paradise of Rares Ø</h1>
+                    <div class="flex items-center space-x-1 border-b border-gray-700">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                        <path id="Union_84" data-name="Union 84" d="M1.372,12A1.371,1.371,0,0,1,0,10.628,3.429,3.429,0,0,1,3.429,7.2H8.572A3.428,3.428,0,0,1,12,10.628,1.371,1.371,0,0,1,10.628,12ZM3,3A3,3,0,1,1,6,6,3,3,0,0,1,3,3Z" fill="#fff"/>
+                      </svg>
+                      <p class="text-primary text-sm py-3">Room by <a href="#" class="text-white font-bold">Claudio</a></p>
+                    </div>
+                    <div class="flex justify-between pt-4">
+                      <div>
+                        <p class="text-white font-bold text-sm">Room rating:</p>
+                        <div class="flex space-x-4 pt-4">
+                          <button class="py-1.5 px-2.5 border rounded border-[#247FDA] focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                              <path id="Union_76" data-name="Union 76" d="M.857,12A.857.857,0,0,1,0,11.143V4.286a.857.857,0,0,1,.857-.857h.857V12ZM2.572,9.857V5.372a2.142,2.142,0,0,1,.55-1.433L6.539.142A.428.428,0,0,1,6.961.013L7.59.17A1.285,1.285,0,0,1,8.4,2.042L7.51,3.649a.429.429,0,0,0,.375.637h2.532a1.583,1.583,0,0,1,1.542,1.939l-.915,4.2A2.148,2.148,0,0,1,8.978,12H4.714A2.145,2.145,0,0,1,2.572,9.857Z" fill="#fff"/>
+                            </svg>
+                          </button>
+                          <button class="py-1.5 px-2.5 border rounded border-gray-700 focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                              <path id="Union_77" data-name="Union 77" d="M.857,12A.857.857,0,0,1,0,11.143V4.286a.857.857,0,0,1,.857-.857h.857V12ZM2.572,9.857V5.372a2.142,2.142,0,0,1,.55-1.433L6.539.142A.428.428,0,0,1,6.961.013L7.59.17A1.285,1.285,0,0,1,8.4,2.041L7.51,3.649a.429.429,0,0,0,.375.637h2.532a1.583,1.583,0,0,1,1.542,1.939l-.915,4.2A2.148,2.148,0,0,1,8.978,12H4.714A2.145,2.145,0,0,1,2.572,9.857Z" transform="translate(12 12) rotate(180)" fill="#8e8e8e"/>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="pr-6">
+                        <div class="flex items-center space-x-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
+                            <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
+                              <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
+                              <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
+                            </g>
+                          </svg>
+                          <p class="text-white">2504</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
+                            <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
+                              <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
+                              <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
+                            </g>
+                          </svg>
+                          <p class="text-white">12934</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
+                            <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
+                              <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
+                              <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
+                            </g>
+                          </svg>
+                          <p class="text-white">94/100</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="block uppercase text-center bg-blue font-bold rounded-md py-2 mt-4" href="#">join room</a>
+                  </div>
+                </div>
+  
+                <div class="group border border-[#242424] rounded-lg hover:border hover:border-[#247FDA]">
+                  <div class="relative h-28 bg-light rounded-t-lg group-hover:bg-blue transition ease-in">
+                    <button class="absolute top-4 right-4 bg-black rounded-full py-2.5 px-2 focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
+                        <g id="Group_168" data-name="Group 168" transform="translate(0 -64)">
+                          <path id="Path_29" data-name="Path 29" d="M12,64A12.806,12.806,0,0,0,0,73a12.808,12.808,0,0,0,12,9,12.808,12.808,0,0,0,12-9,12.806,12.806,0,0,0-12-9Zm0,15a6,6,0,1,1,6-6A6,6,0,0,1,12,79Z" fill="#fff"/>
+                          <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(2 1.5)" fill="#fff"/>
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="bg-black rounded-b-lg p-6">
+                    <h1 class="text-white text-lgfont-bold">Ø Paradise of Rares Ø</h1>
+                    <div class="flex items-center space-x-1 border-b border-gray-700">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                        <path id="Union_84" data-name="Union 84" d="M1.372,12A1.371,1.371,0,0,1,0,10.628,3.429,3.429,0,0,1,3.429,7.2H8.572A3.428,3.428,0,0,1,12,10.628,1.371,1.371,0,0,1,10.628,12ZM3,3A3,3,0,1,1,6,6,3,3,0,0,1,3,3Z" fill="#fff"/>
+                      </svg>
+                      <p class="text-primary text-sm py-3">Room by <a href="#" class="text-white font-bold">Disco-Lee</a></p>
+                    </div>
+                    <div class="flex justify-between pt-4">
+                      <div>
+                        <p class="text-white font-bold text-sm">Room rating:</p>
+                        <div class="flex space-x-4 pt-4">
+                          <button class="py-1.5 px-2.5 border rounded border-[#247FDA] focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                              <path id="Union_76" data-name="Union 76" d="M.857,12A.857.857,0,0,1,0,11.143V4.286a.857.857,0,0,1,.857-.857h.857V12ZM2.572,9.857V5.372a2.142,2.142,0,0,1,.55-1.433L6.539.142A.428.428,0,0,1,6.961.013L7.59.17A1.285,1.285,0,0,1,8.4,2.042L7.51,3.649a.429.429,0,0,0,.375.637h2.532a1.583,1.583,0,0,1,1.542,1.939l-.915,4.2A2.148,2.148,0,0,1,8.978,12H4.714A2.145,2.145,0,0,1,2.572,9.857Z" fill="#fff"/>
+                            </svg>
+                          </button>
+                          <button class="py-1.5 px-2.5 border rounded border-gray-700 focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                              <path id="Union_77" data-name="Union 77" d="M.857,12A.857.857,0,0,1,0,11.143V4.286a.857.857,0,0,1,.857-.857h.857V12ZM2.572,9.857V5.372a2.142,2.142,0,0,1,.55-1.433L6.539.142A.428.428,0,0,1,6.961.013L7.59.17A1.285,1.285,0,0,1,8.4,2.041L7.51,3.649a.429.429,0,0,0,.375.637h2.532a1.583,1.583,0,0,1,1.542,1.939l-.915,4.2A2.148,2.148,0,0,1,8.978,12H4.714A2.145,2.145,0,0,1,2.572,9.857Z" transform="translate(12 12) rotate(180)" fill="#8e8e8e"/>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="pr-6">
+                        <div class="flex items-center space-x-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
+                            <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
+                              <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
+                              <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
+                            </g>
+                          </svg>
+                          <p class="text-white">2504</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
+                            <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
+                              <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
+                              <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
+                            </g>
+                          </svg>
+                          <p class="text-white">12934</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
+                            <g id="Group_156" data-name="Group 156" transform="translate(0 -64)">
+                              <path id="Path_29" data-name="Path 29" d="M8,64a8.538,8.538,0,0,0-8,6,8.539,8.539,0,0,0,8,6,8.539,8.539,0,0,0,8-6,8.538,8.538,0,0,0-8-6ZM8,74a4,4,0,1,1,4-4A4,4,0,0,1,8,74Z" fill="#fff"/>
+                              <path id="Path_30" data-name="Path 30" d="M11.768,69.732a2.5,2.5,0,1,1-3.536,0,2.5,2.5,0,0,1,3.536,0" transform="translate(-2 -1.5)" fill="#fff"/>
+                            </g>
+                          </svg>
+                          <p class="text-white">94/100</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="flex items-center justify-center space-x-1 uppercase py-2 mt-4 border border-gray-600 font-bold text-white rounded-md" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <g id="disturb" transform="translate(-174 221)" opacity="0.6">
+                          <g id="Group_1" data-name="Group 1" transform="translate(174 -221)">
+                            <path id="Path_1" data-name="Path 1" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0ZM6.068,4.039a7.128,7.128,0,0,1,7.868,0L4.043,13.936A7.143,7.143,0,0,1,6.068,4.039Zm7.864,11.922a7.128,7.128,0,0,1-7.868,0l9.893-9.893A7.143,7.143,0,0,1,13.932,15.961Z" fill="#8e8e8e"/>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>Closed</p>
+                    </a>
+                  </div>
+                </div>
+  
               </div>
 
-            </div>
-
-            <!-- pagination -->
-            <div class="flex border-b border-gray-700 space-x-2 pt-6 pb-10">
-              <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">1</button>
-              <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">2</button>
-              <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">3</button>
-              <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">4</button>
-              <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">5</button>
-              <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-2.5 focus:outline-none hover:border-[#2580DC] hover:text-white">...</button>
+              <!-- pagination -->
+              <div class="flex space-x-2 pt-6 pb-10">
+                <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">1</button>
+                <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">2</button>
+                <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">3</button>
+                <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">4</button>
+                <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-3 focus:outline-none hover:border-[#2580DC] hover:text-white">5</button>
+                <button class="text-primary bg-dark border border-gray-700 rounded-md py-1 px-2.5 focus:outline-none hover:border-[#2580DC] hover:text-white">...</button>
+              </div>
             </div>
           </div>
 
-          <!-- expanded example -->
-          <div class="px-20">
-            <div class="flex items-center border-b border-gray-700 space-x-4 pt-12 pb-10">
+          <!-- ========== expanded example ========== -->
+          <div class="accordionMain px-20">
+            <div class="accordionBtn flex items-center cursor-pointer space-x-4 pt-12 pb-10">
               <button class="py-3 px-2.5 border border-gray-600 rounded-full bg-dark focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
                   <path id="Path_143" data-name="Path 143" d="M361.171,153.787c.4.7,6,6,6,6l-6,6" transform="translate(166.494 -360.305) rotate(90)" fill="none" stroke="#8e8e8e" stroke-width="2"/>
@@ -1101,11 +1109,14 @@
               </button>
               <h1 class="text-3xl font-bold text-white opacity-30">Expanded example</h1>
             </div>
+            <div class="h-0 transition-[height] duration-200 ease-in overflow-hidden border-b border-gray-700">
+                <h1 class="text-4xl text-white p-6">Some content here</h1>
+            </div>
           </div>
 
-          <!-- expanded example -->
-          <div class="px-20 pb-16">
-            <div class="flex items-center border-b border-gray-700 space-x-4 pt-12 pb-10">
+          <!-- ========== expanded example ========== -->
+          <div class="accordionMain px-20 pb-16">
+            <div class="accordionBtn flex items-center cursor-pointer space-x-4 pt-12 pb-10">
               <button class="py-3 px-2.5 border border-gray-600 rounded-full bg-dark focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
                   <path id="Path_143" data-name="Path 143" d="M361.171,153.787c.4.7,6,6,6,6l-6,6" transform="translate(166.494 -360.305) rotate(90)" fill="none" stroke="#8e8e8e" stroke-width="2"/>
@@ -1113,9 +1124,12 @@
               </button>
               <h1 class="text-3xl font-bold text-white opacity-30">Expanded example</h1>
             </div>
+            <div class="h-0 transition-[height] duration-200 ease-in overflow-hidden border-b border-gray-700">
+                <h1 class="text-4xl text-white p-6">Some content here</h1>
+            </div>
           </div>
 
-          <!-- footer -->
+          <!-- ========== footer ========== -->
           <div class="px-20 py-16 bg-[#1D1D1D]">
             <div class="flex items-start">
               <!-- left -->

@@ -612,6 +612,14 @@ video {
 	margin-left: auto;
 	margin-right: auto;
 }
+.my-10 {
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+.my-12 {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
 .mt-8 {
 	margin-top: 2rem;
 }
@@ -656,6 +664,12 @@ video {
 }
 .h-28 {
 	height: 7rem;
+}
+.h-0 {
+	height: 0px;
+}
+.h-80 {
+	height: 20rem;
 }
 .w-2\/12 {
 	width: 16.666667%;
@@ -702,6 +716,9 @@ video {
 	--tw-scale-x: 1;
 	--tw-scale-y: 1;
 	transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.cursor-pointer {
+	cursor: pointer;
 }
 .grid-cols-4 {
 	grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1023,6 +1040,10 @@ video {
 	padding-top: 4rem;
 	padding-bottom: 4rem;
 }
+.py-12 {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
 .pt-28 {
 	padding-top: 7rem;
 }
@@ -1156,6 +1177,9 @@ video {
 	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 150ms;
+}
+.duration-200 {
+	transition-duration: 200ms;
 }
 .ease-in {
 	transition-timing-function: cubic-bezier(0.4, 0, 1, 1);

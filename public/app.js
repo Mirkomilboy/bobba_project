@@ -1,13 +1,5 @@
-// warning text
-// const warning = document.querySelector('.warning');
-// const btn = document.querySelector('.btnWarning');
-
-// btn.addEventListener('click', function () {
-//     console.log('clicked');
-//     warning.classList.add('hidden');
-//     warning.classList.remove('flex');
-// });
-
+'use strict';
+// =============== warning text ===============
 const btn = document.querySelector('.btnWarning');
 
 btn.addEventListener('click', function () {
@@ -15,6 +7,47 @@ btn.addEventListener('click', function () {
     document.querySelector('.warning').classList.add('hidden');
     document.querySelector('.warning').classList.remove('flex');
 });
+
+// =============== accordion ===============
+const menuLinks = document.querySelectorAll(".accordion .accordionBtn");
+menuLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    let menuContent = link.nextElementSibling;
+    let active = document.querySelector(".accordion .accordionMain.active");
+
+    if (menuContent) {
+          if (link.parentElement.classList.contains("active")) {
+            link.parentElement.classList.remove("active");
+            active.lastElementChild.style.height = "0";
+            link.querySelector("svg").style.transform = "rotate(0deg)";
+          } else {
+            link.parentElement.classList.add("active");
+            menuContent.style.height = menuContent.scrollHeight + "px";
+            link.querySelector("svg").style.transform = "rotate(180deg)";
+          }
+      }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ========================== chart.js
 // const config = {
