@@ -1,4 +1,12 @@
 'use strict';
+// =============== menu toggle ===============
+const menu = document.querySelector('.hamburger');
+const sideBar = document.querySelector('.sideBar');
+
+menu.addEventListener('click', function () {
+    sideBar.classList.toggle('hidden');
+})
+
 // =============== warning text ===============
 const btn = document.querySelector('.btnWarning');
 
@@ -28,6 +36,8 @@ menuLinks.forEach((link) => {
       }
   });
 });
+
+
 
 
 
