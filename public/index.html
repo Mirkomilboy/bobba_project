@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bobba</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.1/Chart.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.0/chart.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -91,7 +91,7 @@
         <!-- ========== main ========== -->
         <div class="accordion w-full 2xl:w-10/12 bg-medium ml-auto">
           <!-- ========== header ========== -->
-          <div class="fixed w-full 2xl:w-10/12 z-50 flex flex-wrap items-center justify-between bg-[#1D1D1D] px-8 md:px-20">
+          <div class="fixed w-full 2xl:w-10/12 z-50 flex flex-wrap items-center justify-between bg-[#1D1D1D] px-4 md:px-20">
             <!-- left contenct -->
             <div class="hidden xl:flex py-4">
               <div class="flex items-center border-r space-x-4 border-[#414141] pr-6">
@@ -129,8 +129,8 @@
             </div>
 
             <!-- center content -->
-            <div class="flex space-x-4 py-6">
-              <button class="p-3 sm:p-4 rounded-full bg-[#242424] focus:outline-none">
+            <div class="flex space-x-2 sm:space-x-4 py-6">
+              <button class="p-2 sm:p-4 rounded-full bg-[#242424] focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                   <g id="Group_81" data-name="Group 81" transform="translate(-40 -730)" opacity="0.4">
                     <rect id="Rectangle_39" data-name="Rectangle 39" width="10" height="10" rx="5" transform="translate(45 730)" fill="#8e8e8e"/>
@@ -138,7 +138,7 @@
                   </g>
                 </svg>
               </button>
-              <button class="p-3 sm:p-4 rounded-full bg-[#242424] focus:outline-none">
+              <button class="p-2 sm:p-4 rounded-full bg-[#242424] focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                   <g id="send" transform="translate(0 0)" opacity="0.4">
                     <path id="Path_67" data-name="Path 67" d="M8.75,17.612V22.25a.75.75,0,0,0,1.354.444L12.817,19Z" transform="translate(-1.756 -3)" fill="#8e8e8e"/>
@@ -146,7 +146,7 @@
                   </g>
                 </svg>
               </button>
-              <button class="relative p-3 sm:p-4 rounded-full bg-[#8E8E8E] focus:outline-none">
+              <button class="relative p-2 sm:p-4 rounded-full bg-[#8E8E8E] focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                   <path id="Union_30" data-name="Union 30" d="M6.511,17.724h6.978a3.812,3.812,0,0,1-6.978,0ZM.76,16.243a.753.753,0,0,1-.743-.578.718.718,0,0,1,.4-.817,3.921,3.921,0,0,0,1.193-1.622A12.879,12.879,0,0,0,2.851,7.149a7.149,7.149,0,0,1,14.3-.028c0,.009,0,.019,0,.028a12.878,12.878,0,0,0,1.244,6.076,3.921,3.921,0,0,0,1.193,1.622.718.718,0,0,1,.4.817.753.753,0,0,1-.743.578ZM19.6,14.853h0Z" transform="translate(0)" fill="#fff"/>
                 </svg>
@@ -157,16 +157,16 @@
             </div>
 
             <!-- right content -->
-            <div class="flex items-center space-x-4 py-6">
+            <div class="flex items-center space-x-2 sm:space-x-4 py-6">
               <a href="#" class="flex items-center p-1 rounded-full bg-blue">
                 <p class="hidden sm:block text-sm font-bold text-white px-4">Enter on Bobba.biz</p>
-                <div class="p-3 sm:p-3.5 rounded-full sm:bg-[#8E8E8E] sm:bg-opacity-40">
+                <div class="p-2 sm:p-3.5 rounded-full sm:bg-[#8E8E8E] sm:bg-opacity-40">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                     <path id="Union_24" data-name="Union 24" d="M3,16V13H5v1h9V2H5V3H3V0H16V16Zm2.879-5.707L7.172,9H0V7H7.172L5.879,5.707,7.293,4.293,11,8,7.293,11.707Z" fill="#fff"/>
                   </svg>
                 </div>
               </a>
-              <button class="relative p-3 sm:p-4 rounded-full bg-light focus:outline-none">
+              <button class="relative p-2 sm:p-4 rounded-full bg-light focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                   <g id="Group_79" data-name="Group 79" transform="translate(-40 -730)">
                     <rect id="Rectangle_39" data-name="Rectangle 39" width="10" height="10" rx="5" transform="translate(45 730)" fill="#fff"/>
@@ -187,7 +187,7 @@
           </div>
 
           <!-- ========== hero ========== -->
-          <div class="flex flex-wrap px-8 md:px-20 pt-24">
+          <div class="flex flex-wrap px-4 md:px-20 pt-24">
             <!-- left side -->
             <div class="w-full lg:w-1/2 lg:border-r border-[#414141] py-10 pr-2">
               <p class="text-white text-3xl font-bold">Welcome back,</p>
@@ -295,7 +295,7 @@
           </div>
 
           <!-- ========== warning text ========== -->
-          <div class="px-8 md:px-20">
+          <div class="px-4 md:px-20">
             <div class="warning flex flex-wrap items-center justify-between rounded bg-[#181818] py-2 px-4">
               <div class="flex items-center order-2 lg:order-1 space-x-2 py-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
@@ -304,9 +304,9 @@
                 <p class="text-[#FFDC7E] font-bold text-sm">Your Premium plan is going to expire on 04-07-2020 at 15h21. Renew it now!</p>
               </div>
               <div class="w-full lg:w-auto flex items-center justify-between order-1 lg:order-2 space-x-4 py-2">
-                <div class="flex items-center space-x-4">
-                    <a href="#" class="underline text-white text-sm font-bold">Remind me later</a>
-                    <a href="#" class="font-bold text-sm text-white bg-blue rounded-full py-2 px-4">Renew plan</a>
+                <div class="flex flex-wrap items-center">
+                    <a href="#" class="underline text-white text-sm font-bold m-2">Remind me later</a>
+                    <a href="#" class="font-bold text-sm text-white bg-blue rounded-full m-2 py-2 px-4">Renew plan</a>
                 </div>
                 <button class="btnWarning ml-auto">
                   <svg xmlns="http://www.w3.org/2000/svg" width="17.414" height="17.414" viewBox="0 0 17.414 17.414">
@@ -321,10 +321,10 @@
           </div>
 
           <!-- ========== my friends ========== -->
-          <div class="accordionMain px-8 md:px-20">
+          <div class="accordionMain px-4 md:px-20">
             <div class="accordionBtn flex items-center cursor-pointer space-x-4 pt-12 pb-4">
               <button class="py-3 px-2.5 border border-gray-600 rounded-full bg-dark focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="transform transition-transform" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
                   <path id="Path_143" data-name="Path 143" d="M361.171,153.787c.4.7,6,6,6,6l-6,6" transform="translate(166.494 -360.305) rotate(90)" fill="none" stroke="#8e8e8e" stroke-width="2"/>
                 </svg>
               </button>
@@ -462,10 +462,10 @@
           </div>
 
           <!-- ========== latest news ========== -->
-          <div class="accordionMain px-8 md:px-20">
+          <div class="accordionMain px-4 md:px-20">
             <div class="accordionBtn flex items-center cursor-pointer space-x-4 pt-12 pb-4">
               <button class="py-3 px-2.5 border border-gray-600 rounded-full bg-dark focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
+                <svg class="transform transition-transform" xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
                   <path id="Path_143" data-name="Path 143" d="M361.171,153.787c.4.7,6,6,6,6l-6,6" transform="translate(166.494 -360.305) rotate(90)" fill="none" stroke="#8e8e8e" stroke-width="2"/>
                 </svg>
               </button>
@@ -610,10 +610,10 @@
           </div>
 
           <!-- ========== trade on marketplace ========== -->
-          <div class="accordionMain px-8 md:px-20">
+          <div class="accordionMain px-4 md:px-20">
             <div class="accordionBtn flex items-center cursor-pointer space-x-4 pt-12 pb-4">
               <button class="py-3 px-2.5 border border-gray-600 rounded-full bg-dark focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
+                <svg class="transform transition-transform" xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
                   <path id="Path_143" data-name="Path 143" d="M361.171,153.787c.4.7,6,6,6,6l-6,6" transform="translate(166.494 -360.305) rotate(90)" fill="none" stroke="#8e8e8e" stroke-width="2"/>
                 </svg>
               </button>
@@ -748,7 +748,7 @@
           </div>
 
           <!-- ========== discord ========== -->
-          <div class="px-8 md:px-20 py-20">
+          <div class="px-4 md:px-20 py-20">
             <div class="relative lg:flex items-center justify-between bg-[#7289DA] rounded-lg p-6 md:p-12">
               <div class="flex items-center space-x-4 py-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="70" height="80" viewBox="0 0 70 80">
@@ -775,10 +775,10 @@
           </div>
 
           <!-- ========== most popular rooms ========== -->
-          <div class="accordionMain px-8 md:px-20">
+          <div class="accordionMain px-4 md:px-20">
             <div class="accordionBtn flex items-center space-x-4 cursor-pointer pt-12 pb-4">
               <button class="py-3 px-2.5 border border-gray-600 rounded-full bg-dark focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
+                <svg class="transform transition-transform" xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
                   <path id="Path_143" data-name="Path 143" d="M361.171,153.787c.4.7,6,6,6,6l-6,6" transform="translate(166.494 -360.305) rotate(90)" fill="none" stroke="#8e8e8e" stroke-width="2"/>
                 </svg>
               </button>
@@ -1110,10 +1110,10 @@
           </div>
 
           <!-- ========== expanded example ========== -->
-          <div class="accordionMain px-8 md:px-20">
+          <div class="accordionMain px-4 md:px-20">
             <div class="accordionBtn flex items-center cursor-pointer space-x-4 pt-12 pb-10">
               <button class="py-3 px-2.5 border border-gray-600 rounded-full bg-dark focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
+                <svg class="transform transition-transform" xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
                   <path id="Path_143" data-name="Path 143" d="M361.171,153.787c.4.7,6,6,6,6l-6,6" transform="translate(166.494 -360.305) rotate(90)" fill="none" stroke="#8e8e8e" stroke-width="2"/>
                 </svg>
               </button>
@@ -1125,10 +1125,10 @@
           </div>
 
           <!-- ========== expanded example ========== -->
-          <div class="accordionMain px-8 md:px-20 pb-16">
+          <div class="accordionMain px-4 md:px-20 pb-16">
             <div class="accordionBtn flex items-center cursor-pointer space-x-4 pt-12 pb-10">
               <button class="py-3 px-2.5 border border-gray-600 rounded-full bg-dark focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
+                <svg class="transform transition-transform" xmlns="http://www.w3.org/2000/svg" width="13.207" height="8.3" viewBox="0 0 13.207 8.3">
                   <path id="Path_143" data-name="Path 143" d="M361.171,153.787c.4.7,6,6,6,6l-6,6" transform="translate(166.494 -360.305) rotate(90)" fill="none" stroke="#8e8e8e" stroke-width="2"/>
                 </svg>
               </button>
@@ -1140,7 +1140,7 @@
           </div>
 
           <!-- ========== footer ========== -->
-          <div class="px-8 md:px-20 py-14 bg-[#1D1D1D]">
+          <div class="px-4 md:px-20 py-14 bg-[#1D1D1D]">
             <div class="xl:flex items-start">
               <!-- left -->
               <div class="w-full xl:w-2/5 py-4">
@@ -1239,7 +1239,7 @@
 
         </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <script src="app.js"></script>
 </body>
 </html>
